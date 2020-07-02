@@ -15,11 +15,14 @@ app.use(bodyParser.json())
 //incluir rutas de /usuario
 app.use(require('./routes/aniadirUsuario'));
 app.use(require('./routes/aniadirEnfermedad'));
+app.use(require('./routes/insertarNuevoSintoma'));
 
 
 //conexion a la base de dartos
 
-mongoose.connect('mongodb+srv://kevin:kevin@pruebamongodb-6oz0y.mongodb.net/<dbname>?retryWrites=true&w=majority', { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true }, (err, res) => {
+//mongoose.connect('mongodb+srv://kevin:kevin@pruebamongodb-6oz0y.mongodb.net/<dbname>?retryWrites=true&w=majority', { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true }, (err, res) => {
+mongoose.connect('mongodb://localhost:27017/P_Pruebas', { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true }, (err, res) => { //colback
+
     if (err) throw err;
     console.log('Base de datos Online!');
 });
