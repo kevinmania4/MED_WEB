@@ -4,6 +4,7 @@ let Schema = mongoose.Schema;
 
 
 let sintomaSchema = new Schema({
+
     descripcion: {
         type: String,
         required: [true, 'la descripcion es requerida'],
@@ -11,6 +12,6 @@ let sintomaSchema = new Schema({
     }
 });
 
-usurarioSchema.plugin(uniqueValidator, { message: '{PATH} debe ser único' })
+sintomaSchema.plugin(uniqueValidator, { message: '{PATH} debe ser único' })
 
 module.exports = mongoose.model('Sintoma', sintomaSchema);
