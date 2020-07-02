@@ -17,16 +17,15 @@ app.use(bodyParser.json());
 app.use(require("./routes/aniadirUsuario"));
 app.use(require("./routes/aniadirEnfermedad"));
 
-app.use(require("./routes/aniadirUsuario"));
-app.use(require("./routes/aniadirEnfermedad"));
 app.use(require("./routes/insertarNuevoSintoma"));
 
 app.use(require("./routes/insertarTratamiento"));
+app.use(require("./routes/respuesta"));
 //conexion a la base de dartos
 
 mongoose.connect(
     //"mongodb+srv://kevin:kevin@pruebamongodb-6oz0y.mongodb.net/<dbname>?retryWrites=true&w=majority"
-    "mongodb://localhost:27017/proyecto", { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
+    "mongodb://localhost:27017/MED_WEB_BDD", { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
 
     (err, res) => {
         if (err) throw err;
