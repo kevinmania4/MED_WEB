@@ -30,21 +30,27 @@ app.get('/enfermedad', (req, res) => {
 
 app.post('/enfermedad', (req, res) => {
     let body = req.body
-    let enfermedad = new Enfermedad({
-        descripcion: body.descripcion
-    });
-    enfermedad.save((err, usuarioDB) => {
-        if (err) {
-            return res.status(400).json({
-                ok: false,
-                err
-            });
-        }
-        res.json({
-            ok: true,
-            usuario: usuarioDB
+    console.log(body.name);
+    console.log(body.descripcion);
+    console.log(body.enfermedad);
+    console.log(body);
+    /*
+        let enfermedad = new Enfermedad({
+            descripcion: body.descripcion
         });
-    });
+        enfermedad.save((err, usuarioDB) => {
+            if (err) {
+                return res.status(400).json({
+                    ok: false,
+                    err
+                });
+            }
+            res.json({
+                ok: true,
+                usuario: usuarioDB
+            });
+        });
+    */
 });
 
 
