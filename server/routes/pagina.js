@@ -14,6 +14,12 @@ app.get("/registro", (req, res) => {
     res.render("GUIregistro", {});
 });
 
+app.get("/sintoma", (req, res) => {
+    res.render("GUIsintomatologia", {});
+});
+app.get("/tratamiento", (req, res) => {
+    res.render("GUItratamiento", {});
+});
 // app.get('/casa', (req, res) => {
 //     res.render('casa', {});
 // });
