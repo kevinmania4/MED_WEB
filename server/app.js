@@ -2,8 +2,7 @@ require("./config/config");
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const hbs = require('hbs');
-
+const hbs = require("hbs");
 
 const bodyParser = require("body-parser");
 
@@ -14,11 +13,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(express.static('public'));
-hbs.registerPartials('./views/parcials');
-app.set('view engine', 'hbs'); //establecer el motor que va a renderizar mi pagina en este caso el Handlebars
+app.use(express.static("public"));
+hbs.registerPartials("./views/parcials");
+app.set("view engine", "hbs"); //establecer el motor que va a renderizar mi pagina en este caso el Handlebars
 
-app.use(require("./routes/pagina"))
+app.use(require("./routes/pagina"));
 
 //incluir rutas de /usuario
 app.use(require("./routes/aniadirUsuario"));
@@ -27,8 +26,6 @@ app.use(require("./routes/insertarNuevoSintoma"));
 app.use(require("./routes/insertarTratamiento"));
 app.use(require("./routes/respuesta"));
 //conexion a la base de dartos
-
-
 
 mongoose.connect(
     "mongodb+srv://kevin:kevin@pruebamongodb-6oz0y.mongodb.net/MED_WEB_ATLAS?retryWrites=true&w=majority", { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
