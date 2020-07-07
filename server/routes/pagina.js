@@ -6,6 +6,9 @@ app.get("/", (req, res) => {
         pagina: "Home",
     });
 });
+app.get("/", (req, res) => {
+    res.render("casa", {});
+});
 
 app.get("/registro", (req, res) => {
     res.render("GUIregistro", {});
