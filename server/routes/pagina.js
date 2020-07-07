@@ -11,4 +11,8 @@ app.get('/enfermedad', (req, res) => {
     res.render('enfermedad', {});
 });
 
+app.get('/casa', (req, res) => {
+    res.render('casa', {});
+});
+
 module.exports = app;
