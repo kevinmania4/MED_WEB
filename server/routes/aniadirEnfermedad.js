@@ -26,7 +26,7 @@ app.get('/enfermedad', (req, res) => {
                     err
                 });
             }
-            res.render('GUI_Enfermedad', { usuarios })
+            res.render('GUI_Enfermedades', { usuarios })
                 /*
                             res.json({
                                 ok: true,

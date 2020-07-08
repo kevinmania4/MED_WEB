@@ -20,10 +20,13 @@ app.get('/sintoma', (req, res) => {
                     err
                 });
             }
-            res.json({
-                ok: true,
-                usuarios
-            });
+            res.render('GUIsintomatologia', { usuarios })
+                /*
+                res.json({
+                    ok: true,
+                    usuarios
+                });
+                */
         });
 });
 

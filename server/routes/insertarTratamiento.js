@@ -20,10 +20,13 @@ app.get("/tratamiento", (req, res) => {
                     err,
                 });
             }
-            res.json({
-                ok: true,
-                usuarios,
-            });
+            res.render('GUItratamiento', { usuarios })
+                /*
+                res.json({
+                    ok: true,
+                    usuarios,
+                });
+                */
         });
 });
 

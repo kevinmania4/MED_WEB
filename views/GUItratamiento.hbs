@@ -1,0 +1,29 @@
+{{> header }}
+{{> head }}
+<section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url(assets/img/docs.jpg)">
+                <center>
+                    <div class="section-title">
+                        <h2>Ingrese Tratamiento</h2>
+                    </div>
+                    <input type="text" name="name" rows="5" class="form-control" id="name" placeholder="Tratamiento"
+                        data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                    <br> <br>
+                    <div class="text-center"><input type="submit" value="Aceptar"></div>
+
+
+                </center>
+
+            </div>
+        </div>
+    </div>
+</section>
+{{> footer }}
