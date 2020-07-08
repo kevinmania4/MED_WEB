@@ -2,6 +2,11 @@ const express = require('express');
 const Enfermedad = require('../models/enfermedad');
 
 const app = express();
+/*
+app.get('/enfermedad', (req, res) => {
+    res.render('GUI_Enfermedad', {});
+});
+*/
 
 app.get('/enfermedad', (req, res) => {
     //res.render('enfermedad', {});
@@ -21,10 +26,14 @@ app.get('/enfermedad', (req, res) => {
                     err
                 });
             }
-            res.json({
-                ok: true,
-                usuarios
-            });
+            res.render('GUI_Enfermedad', { usuarios })
+                /*
+                            res.json({
+                                ok: true,
+                                usuarios
+                            });
+                */
+                //            res.render('GUI_Enfermedad', {}).json({ usuarios });
         });
 });
 

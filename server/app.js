@@ -16,8 +16,9 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 hbs.registerPartials("./views/parcials");
 app.set("view engine", "hbs"); //establecer el motor que va a renderizar mi pagina en este caso el Handlebars
+require('../hbs/helpers')
 
-app.use(require("./routes/pagina"));
+//app.use(require("./routes/pagina"));
 
 //incluir rutas de /usuario
 app.use(require("./routes/aniadirUsuario"));

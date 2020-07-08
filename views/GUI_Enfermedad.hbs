@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<table border="1">
+  <tr>
+    <td>Enfermedad</td>
+  </tr>
+{{#each usuarios}}
+<tr>
+    <td id="{{_id}}"><a href="#">{{descripcion}}</a> 
+</td>
+<tr>
+  <td>{{_id}}</td>
+</tr>
+{{/each}}
+
+  </tr>
+</table>
+    
+    <form action="#" method="post">
+        <label for="name">Enfermedad</label></br>
+        <input type="text" id="name" name="descripcion"></br>
+        <button type="submit">Envíe su mensaje</button>
+    </form>
+
+
+
+
+
+
+
+
+</body>
+</html>

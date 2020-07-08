@@ -24,6 +24,7 @@
         "hbs": "^4.1.1",
         "mongoose": "^5.9.21",
         "mongoose-unique-validator": "^2.0.3",
+        "nodemon": "^2.0.4",
         "underscore": "^1.10.2"
     }
 }
