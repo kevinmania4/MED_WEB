@@ -20,6 +20,9 @@ app.get("/sintoma", (req, res) => {
 app.get("/tratamiento", (req, res) => {
     res.render("GUItratamiento", {});
 });
+app.get("/sesion", (req, res) => {
+    res.render("GUIiniciarsesion", {});
+});
 // app.get('/casa', (req, res) => {
 //     res.render('casa', {});
 // });
