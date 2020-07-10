@@ -30,6 +30,7 @@ app.get('/sintoma/:idEnfermedad', (req, res) => {
         });
 });
 
+
 app.post('/sintoma', (req, res) => {
     let body = req.body
         //let id = body.id;
@@ -52,5 +53,42 @@ app.post('/sintoma', (req, res) => {
         res.write("<a href='/sintoma'>Recargar página</a>");
     });
 });
+//--------------------------AJAX
+app.get('/nuevoS', (req, res) => {
+    res.render('GUIsintomatologia');
+});
 
+app.get('/sintomas/:idE', (req, res) => {
+    let id_enfermedad = req.params.idE;
+    console.log(id_enfermedad);
+    res.render('GUIsintomatologia');
+});
+
+app.get('/consultaSintoma', (req, res) => {
+    Sintoma.find({})
+        .exec((err, sintomas) => {
+            if (err) {
+                return res.status(400).json({
+                    ok: false,
+                    err
+                });
+            }
+            res.send({ sintomas: sintomas });
+        });
+});
+app.post('/sintomaIngresa', (req, res) => {
+    let body = req.body
+    let sintoma = new Sintoma({
+        descripcion: body.descripcion
+    });
+    sintoma.save((err, sintoma) => {
+        if (err) {
+            return res.status(400).json({
+                ok: false,
+                err
+            });
+        }
+        res.send('Se guardo el sintoma');
+    });
+});
 module.exports = app;
