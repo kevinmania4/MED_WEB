@@ -1,12 +1,27 @@
 const express = require('express');
 const Enfermedad = require('../models/enfermedad');
+const fetch = require('node-fetch');
+
 
 const app = express();
-/*
-app.get('/enfermedad', (req, res) => {
-    res.render('GUI_Enfermedad', {});
+
+app.get('/enfermedades', (req, res) => {
+    Enfermedad.find({})
+        .exec((err, enfermedadesDB) => {
+            if (err) {
+                return res.status(400).json({
+                    ok: false,
+                    err
+                });
+            }
+            res.send({ enfermedades: enfermedadesDB });
+        });
+    //res.send('SI esttaaaaa')
 });
-*/
+
+app.get('/enfermera', (req, res) => {
+    res.render('GUI_Enfermedades')
+});
 
 app.get('/enfermedad', (req, res) => {
     //res.render('enfermedad', {});
@@ -37,6 +52,16 @@ app.get('/enfermedad', (req, res) => {
         });
 });
 
+var respuesta = () => {
+    let mensaje = "";
+    mensaje += "<html>";
+    mensaje += "<body>";
+    mensaje += "<script>alert('Enfermedad ingresada')</script>";
+    mensaje += "</body>";
+    mensaje += "</html>"
+    return mensaje;
+}
+
 app.post('/enfermedad', (req, res) => {
     let body = req.body
 
@@ -50,10 +75,17 @@ app.post('/enfermedad', (req, res) => {
                 err
             });
         }
+        /*
         res.json({
             ok: true,
             usuario: usuarioDB
         });
+        */
+        //res.render('GUI_Enfermedades', { usuarioDB })
+        //res.send(respuesta());
+        //res.write("<script>javascript:window.location.reload()</script>");
+        res.write("<a href='/enfermedad'>Recargar página</a>");
+        //res.
     });
 
 });

@@ -22,3 +22,7 @@ hbs.registerHelper('capitalizar', (texto) => {
 hbs.registerHelper('getAnio', () => {
     return new Date().getFullYear();
 });
+
+hbs.registerHelper('getId_Enfermedad', (id) => {
+    return id
+});

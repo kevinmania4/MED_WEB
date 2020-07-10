@@ -2,11 +2,11 @@ const express = require('express');
 const Sintoma = require('../models/sintoma');
 
 const app = express();
-
-app.get('/sintoma', (req, res) => {
+app.get('/sintoma/:idEnfermedad', (req, res) => {
+    let id_enfermedad = req.params.idEnfermedad;
     let desde = req.query.desde || 0;
     desde = Number(desde);
-
+    console.log(id_enfermedad);
     let limite = req.query.limite || 0;
     limite = Number(limite);
 
@@ -32,6 +32,7 @@ app.get('/sintoma', (req, res) => {
 
 app.post('/sintoma', (req, res) => {
     let body = req.body
+        //let id = body.id;
     let sintoma = new Sintoma({
         descripcion: body.descripcion
     });
@@ -42,11 +43,13 @@ app.post('/sintoma', (req, res) => {
                 err
             });
         }
-
+        /*
         res.json({
             ok: true,
             usuario: usuarioDB
         });
+        */
+        res.write("<a href='/sintoma'>Recargar página</a>");
     });
 });
 
