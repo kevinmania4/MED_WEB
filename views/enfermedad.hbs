@@ -53,7 +53,7 @@
                 response.enfermedades.forEach(function(enfer){
                     let mensaje="";
                     mensaje+=""
-                tbodyEl.append('<tr><th>'+enfer.descripcion+'</th><th ><a href="/sintomas/'+enfer._id+'">Seleccionar</a></th></tr>');
+                tbodyEl.append('<tr><th>'+enfer.descripcion+'</th><th ><a href="/nuevoS?idE='+enfer._id+'">Seleccionar</a></th></tr>');
             });
           }
         });
@@ -78,7 +78,7 @@
                             var tbodyEl=$('tbody');
                             tbodyEl.html('');
                             response.enfermedades.forEach(function(enfer){
-                                tbodyEl.append('<tr><th>'+enfer.descripcion+'</th><th><a href="/sintoma/'+enfer._id+'">Seleccionar</a></th></tr>');
+                                tbodyEl.append('<tr><th>'+enfer.descripcion+'</th><th><a href="/nuevoS?idE='+enfer._id+'">Seleccionar</a></th></tr>');
                             });
                         }
                     });
@@ -88,9 +88,6 @@
         });
 
     });
-    //<th><a href="/sintoma/'+enfer._id+'>'+enfer._id+'</a></th>\
-    //<th><button onclick="window.location.href=/sintoma/'+enfer._id+'">Seleccionar</button></th>
-    //<th><a href="/sintoma/'+enfer._id+'">'+enfer._id+'</a></th>
     </script>
 </body>
 {{> footer }}

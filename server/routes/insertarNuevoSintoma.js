@@ -2,7 +2,7 @@ const express = require('express');
 const Sintoma = require('../models/sintoma');
 
 const app = express();
-app.get('/sintoma/:idEnfermedad', (req, res) => {
+app.get('/sintoma', (req, res) => {
     let id_enfermedad = req.params.idEnfermedad;
     let desde = req.query.desde || 0;
     desde = Number(desde);
@@ -55,6 +55,9 @@ app.post('/sintoma', (req, res) => {
 });
 //--------------------------AJAX
 app.get('/nuevoS', (req, res) => {
+    let idEnfermedad = req.query.idE;
+    console.log('En nuevos:');
+    console.log(idEnfermedad);
     res.render('GUIsintomatologia');
 });
 

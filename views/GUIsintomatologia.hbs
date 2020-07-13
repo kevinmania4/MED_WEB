@@ -13,14 +13,24 @@
                     <div class="section-title">
                         <h2>Sintomas</h2>
                     </div>
+                    <div id="contentTabla">
                     <table class="egt" border="1">
                         <thead>
                         <tr>
                             <th>Tabla sintomatologia</th>
                         </tr>
                         </thead>
-                        <tbody></tbody>
+                        <tbody id="TB"></tbody>
                     </table>
+                    </div>
+                    <hr>
+                    <div id="contenedor">
+                        <div class="item">
+                            <div class="remove">X</div>
+                                HOLA                            
+                        </div>
+                    </div>
+                    <hr>
                     <br>
                     <div class="section-title">
                         <form id="create-form">
@@ -49,6 +59,7 @@
     <script>
     //console.log('Hola como estas')
     $(function() {
+        var id=[]
         $.ajax({
           url:'/consultaSintoma',
           contentType:'application/json',
@@ -56,10 +67,19 @@
                 var tbodyEl=$('tbody');
                 tbodyEl.html('');
                 response.sintomas.forEach(function(sintoma){
-                tbodyEl.append('<tr><th>'+sintoma.descripcion+'</th><th><a>Seleccionar</a></th></tr>');
+                    tbodyEl.append('<tr><th><input type="button" id="'+sintoma._id+'" value="'+sintoma.descripcion+'"></th><th><a>Seleccionar</a></th></tr>');
+                    //<input type="button" value="Click me">
+                    $('#'+sintoma._id+'').on('click',function(event){
+                        event.preventDefault();
+                        var ids=sintoma._id;
+                        var valor=$('#'+sintoma._id+'').val();
+                        id.push(ids)
+                        console.log("VAL--->",valor," ID->",ids);
+                    });
             });
           }
         });
+        console.log(id)
 
         $('#create-form').on('submit',function(event){
             event.preventDefault();
@@ -80,19 +100,73 @@
                     success:function(response){
                             var tbodyEl=$('tbody');
                             tbodyEl.html('');
+                            var cont=0;
                             response.sintomas.forEach(function(sintoma){
-                            tbodyEl.append('<tr><th>'+sintoma.descripcion+'</th><th><a>Seleccionar</a></th></tr>');
+                                
+                                tbodyEl.append('<tr><th>'+sintoma.descripcion+'</th><th><a>Seleccionar</a></th></tr>');
+                                
+                                
                         });
                     }
                     });
                 }
             });
+
+        });
+});
+    </script>
+    <script>
+        
+        $(function(){
+            /*
+            $('#contenido').on('click',function(event){
+                event.preventDefault();
+                var valor=$('#contenido').val();
+                console.log(valor);
+            });
+            */
+            /*
+            $('#prueba').on('click',function(event){
+                event.preventDefault();
+                
+                var valor=$('#boton2').val();
+                console.log(valor);
+            });
+            
+            $('#boton2').on('click',function(event){
+                event.preventDefault();
+                var valor=$('#contenido').val();
+                console.log(valor);
+            });
+            
+
+            $('#TB').on('click',function(event){
+                event.preventDefault();
+                
+                var valor=$('#contenido').val();
+                console.log("-???",valor);
+            });
+            */
+            /*
+            $('#boton2').on('click',function(event){
+                event.preventDefault();
+                var valor=$('#contenido').val();
+                console.log(valor);
+            });
+            */
+
         });
 
-    });
-    //<th><a href="/sintoma/'+enfer._id+'>'+enfer._id+'</a></th>\
-    //<th><button onclick="window.location.href=/sintoma/'+enfer._id+'">Seleccionar</button></th>
-    //<th><a href="/sintoma/'+enfer._id+'">'+enfer._id+'</a></th>
+/*
+        $(document).ready(function(){
+            //event.preventDefault();
+            $('#contenido').on('click', function(){
+                
+                var valor=$('#contenido').val();
+                console.log(valor);
+            });
+        });
+*/
     </script>
 
 {{> footer }}
