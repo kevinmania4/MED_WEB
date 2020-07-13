@@ -75,6 +75,9 @@
                         var valor=$('#'+sintoma._id+'').val();
                         id.push(ids)
                         console.log("VAL--->",valor," ID->",ids);
+
+                        var agrega='<div class="item"><div class="remove">X</div>'+valor+'</div>';
+                        $('#contenedor').append(agrega);
                     });
             });
           }
