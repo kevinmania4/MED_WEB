@@ -27,10 +27,7 @@
                     </div>
                     <hr>
                     <div id="contenedor">
-                        <div class="item">
-                            <div class="remove">X</div>
-                                HOLA                            
-                        </div>
+                        <div class="descripccion"> Sintomas selecionados </div>
                     </div>
                     <hr>
                     <br>
@@ -69,22 +66,27 @@
                 var tbodyEl=$('tbody');
                 tbodyEl.html('');
                 response.sintomas.forEach(function(sintoma){
-                    tbodyEl.append('<tr><th><input type="button" id="'+sintoma._id+'" value="'+sintoma.descripcion+'"></th><th><a>Seleccionar</a></th></tr>');
-                    //<input type="button" value="Click me">
-                    $('#'+sintoma._id+'').on('click',function(event){
+                    tbodyEl.append('<tr><th id="'+sintoma._id+'0">'+sintoma.descripcion+'</th>\
+                    <th><input visibility: hidden type="button" id="'+sintoma._id+'" value="'+sintoma.descripcion+'"></th></tr>');
+                    $('#'+sintoma._id+'0').on('click',function(event){
                         event.preventDefault();
                         var ids=sintoma._id;
                         var valor=$('#'+sintoma._id+'').val();
-                        id.push(ids)
-                        console.log("VAL--->",valor," ID->",ids);
-
-                        var agrega='<div class="item"><div class="remove">X</div>'+valor+'</div>';
-                        $('#contenedor').append(agrega);
+                        id.push(ids); 
+                        $('#contenedor').append('<div id="0'+sintoma._id+'" ><input visibility: hidden type="button" id="00'+sintoma._id+'" value="'+sintoma._id+'">'+valor+'</div>');
                     });
-            });
-          }
+                    $('#contenedor').on('click','#0'+sintoma._id+'',function(){
+                        var ll=$('#00'+sintoma._id+'').val();
+                        console.log("ITEM: ",ll)
+                        var i = id.indexOf(ll);
+                        console.log("Indice: ",i);
+                        id.splice( i, 1 );
+                        var contiene=$('#0'+sintoma._id+'').remove();
+                    });                   
+                });
+            }
         });
-        console.log(id)
+        
 
         $('#create-form').on('submit',function(event){
             event.preventDefault();
@@ -100,78 +102,41 @@
                     crear.val('');
                     //--
                     $.ajax({
-                    url:'/consultaSintoma',
-                    contentType:'application/json',
-                    success:function(response){
+                        url:'/consultaSintoma',
+                        contentType:'application/json',
+                        success:function(response){
                             var tbodyEl=$('tbody');
                             tbodyEl.html('');
-                            var cont=0;
                             response.sintomas.forEach(function(sintoma){
-                                
-                                tbodyEl.append('<tr><th>'+sintoma.descripcion+'</th><th><a>Seleccionar</a></th></tr>');
-                                
-                                
-                        });
-                    }
+                                tbodyEl.append('<tr><th id="'+sintoma._id+'0">'+sintoma.descripcion+'</th>\
+                                <th><input visibility: hidden type="button" id="'+sintoma._id+'" value="'+sintoma.descripcion+'"></th></tr>');
+                                $('#'+sintoma._id+'0').on('click',function(event){
+                                    event.preventDefault();
+                                    var ids=sintoma._id;
+                                    var valor=$('#'+sintoma._id+'').val();
+                                    id.push(ids); 
+                                    $('#contenedor').append('<div id="0'+sintoma._id+'" ><input visibility: hidden type="button" id="00'+sintoma._id+'" value="'+sintoma._id+'">'+valor+'</div>');
+                                });
+                                $('#contenedor').on('click','#0'+sintoma._id+'',function(){
+                                    var ll=$('#00'+sintoma._id+'').val();
+                                    console.log("ITEM: ",ll)
+                                    var i = id.indexOf(ll);
+                                    console.log("Indice: ",i);
+                                    id.splice( i, 1 );
+                                    var contiene=$('#0'+sintoma._id+'').remove();
+                                });                   
+                            });
+                        }
                     });
+                    //---
                 }
             });
 
         });
+
+        console.log("id_afuera",id)
 });
     </script>
-    <script>
-        
-        $(function(){
-            /*
-            $('#contenido').on('click',function(event){
-                event.preventDefault();
-                var valor=$('#contenido').val();
-                console.log(valor);
-            });
-            */
-            /*
-            $('#prueba').on('click',function(event){
-                event.preventDefault();
-                
-                var valor=$('#boton2').val();
-                console.log(valor);
-            });
-            
-            $('#boton2').on('click',function(event){
-                event.preventDefault();
-                var valor=$('#contenido').val();
-                console.log(valor);
-            });
-            
 
-            $('#TB').on('click',function(event){
-                event.preventDefault();
-                
-                var valor=$('#contenido').val();
-                console.log("-???",valor);
-            });
-            */
-            /*
-            $('#boton2').on('click',function(event){
-                event.preventDefault();
-                var valor=$('#contenido').val();
-                console.log(valor);
-            });
-            */
-
-        });
-
-/*
-        $(document).ready(function(){
-            //event.preventDefault();
-            $('#contenido').on('click', function(){
-                
-                var valor=$('#contenido').val();
-                console.log(valor);
-            });
-        });
-*/
-    </script>
 
 {{> footer }}
