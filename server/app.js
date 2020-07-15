@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 hbs.registerPartials("./views/parcials");
 app.set("view engine", "hbs"); //establecer el motor que va a renderizar mi pagina en este caso el Handlebars
-require('../hbs/helpers')
+require("../hbs/helpers");
 
 //app.use(require("./routes/pagina"));
 
@@ -26,6 +26,7 @@ app.use(require("./routes/aniadirEnfermedad"));
 app.use(require("./routes/insertarNuevoSintoma"));
 app.use(require("./routes/insertarTratamiento"));
 app.use(require("./routes/respuesta"));
+app.use(require("./routes/ingresoCredenciales"));
 //conexion a la base de dartos
 
 mongoose.connect(

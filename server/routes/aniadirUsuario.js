@@ -1,12 +1,11 @@
-const express = require('express');
-const bcrypt = require('bcrypt');
-const _ = require('underscore')
-const Usuario = require('../models/usuario');
+const express = require("express");
+const bcrypt = require("bcrypt");
+const _ = require("underscore");
+const Usuario = require("../models/usuario");
 
 const app = express();
 
-app.get('/usuario', (req, res) => {
-
+app.get("/usuario", (req, res) => {
     let desde = req.query.desde || 0;
     desde = Number(desde);
 
@@ -20,39 +19,66 @@ app.get('/usuario', (req, res) => {
             if (err) {
                 return res.status(400).json({
                     ok: false,
-                    err
+                    err,
                 });
             }
             res.json({
                 ok: true,
-                usuarios
+                usuarios,
             });
         });
 });
 
-app.post('/usuario', (req, res) => {
-    let body = req.body
+app.post("/usuario", (req, res) => {
+    let body = req.body;
     let usuario = new Usuario({
         cedula: body.cedula,
         nombre: body.nombre,
         apellido: body.apellido,
         correo: body.correo,
-        contrasenia: bcrypt.hashSync(body.contrasenia, 10),
-        identificacion: body.identificacion
+        contrasenia: body.contrasenia,
+        identificacion: body.identificacion,
     });
     usuario.save((err, usuarioDB) => {
         if (err) {
             return res.status(400).json({
                 ok: false,
-                err
+                err,
             });
         }
-        res.json({
-            ok: true,
-            usuario: usuarioDB
-        });
+        // res.json({
+        //     ok: true,
+        //     usuario: usuarioDB
+        // });
+        res.write("<a href='/enfermedad'>Recargar página</a>");
     });
 });
+app.get("/registro", (req, res) => {
+    res.render("GUIregistro");
+    // console.log("registro");
+});
 
+app.post("/registro", (req, res) => {
+    let body = req.body;
+    let usuario = new Usuario({
+        cedula: body.cedula,
+        nombre: body.nombre,
+        apellido: body.apellido,
+        correo: body.correo,
+        contrasenia: body.contrasenia,
+        identificacion: body.identificacion,
+        perfil: body.perfil,
+    });
+    usuario.save((err, usuarioDB) => {
+        if (err) {
+            return res.status(400).json({
+                ok: false,
+                err,
+            });
+        }
+
+        res.send({ usuario: usuarioDB });
+    });
+});
 
 module.exports = app;
