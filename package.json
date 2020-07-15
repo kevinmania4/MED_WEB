@@ -1,31 +1,31 @@
 {
-    "name": "proyectointegrador_vii",
-    "version": "1.0.0",
-    "description": "Proyecto integrador",
-    "main": "index.js",
-    "scripts": {
-        "start": "node server/app.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/kevinmania4/MED_WEB.git"
-    },
-    "author": "Wendy juma, Santiago Quisupangui, Kevin Ramirez",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/kevinmania4/MED_WEB/issues"
-    },
-    "homepage": "https://github.com/kevinmania4/MED_WEB#readme",
-    "dependencies": {
-        "bcrypt": "^5.0.0",
-        "body-parser": "^1.19.0",
-        "express": "^4.17.1",
-        "hbs": "^4.1.1",
-        "mongoose": "^5.9.21",
-        "mongoose-unique-validator": "^2.0.3",
-        "node-fetch": "^2.6.0",
-        "nodemon": "^2.0.4",
-        "underscore": "^1.10.2"
-    }
+  "name": "proyectointegrador_vii",
+  "version": "1.0.0",
+  "description": "Proyecto integrador",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinmania4/MED_WEB.git"
+  },
+  "author": "Wendy juma, Santiago Quisupangui, Kevin Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinmania4/MED_WEB/issues"
+  },
+  "homepage": "https://github.com/kevinmania4/MED_WEB#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mongoose": "^5.9.21",
+    "mongoose-unique-validator": "^2.0.3",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.4",
+    "underscore": "^1.10.2"
+  }
 }
