@@ -50,16 +50,17 @@
                     <div class=" mb-3">
                         <div class="col-md-5 mb-3">
                             <label for="country">Tipo de Usuario</label>
-                            <select id="perfil" class="custom-select d-block w-100" required>
+                            <select id="perfil" name="perfil" class="custom-select d-block w-100" required>
                                 <option value="USER_PACIENTE">Paciente</option>
                                 <option value="USER_MEDICO">Medico</option>
                             </select>
+                            <div id="fed"></div>
                             <div class="invalid-feedback">
                                 Seleccione un usuario.
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6 mb-3" id="ide">
                         <label for="lastName">Identificacion</label>
                         <input id="identificacion" type="text" class="form-control" placeholder="" value="" required>
                         <div class="invalid-feedback">
@@ -141,6 +142,19 @@
                     }
                 });
             });
+            $("#perfil").on("change", function () {
+                var perfil = $(this).val();
+                if (perfil == "USER_MEDICO") {
+                    $("#ide").show();
+                } else if (perfil == "USER_PACIENTE") {
+                    $("#ide").hide();
+                    //$("#perfil").val("");
+                    $("#fed").empty();
+                } else {
+                    $("#fed").empty();
+                }
+            });
+            $("#perfil").trigger("change");
 
         });
     </script>
