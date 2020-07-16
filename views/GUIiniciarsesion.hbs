@@ -1,36 +1,53 @@
 {{> header }}
 {{> head }}
 
+<style type="text/css">
+    body,
+    html {
+
+        height: 100%;
+        background-repeat: no-repeat;
+        background: url(assets/img/web5.jpg) no-repeat center center fixed;
+        background-size: 100% 100%;
+        opacity: 5;
+        filter: alpha(opacity=1);
+    }
+</style>
+
 <body class="text-center">
-    <br><br><br><br><br><br><br>
-    <br>
+    <br><br><br><br><br>
+    <font color="black" face="Comic Sans MS,arial">
+        <h1 align="center">Iniciar sesion</h1>
+    </font>
+    <br><br><br>
+
     <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
         <div class="carousel-inner" role="listbox">
 
-            <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url(assets/img/docs.jpg)">
-                <center>
-                    <form class="form-signin" id="create-sesion">
-                        <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72"
-                            height="72">
-                        <h1 class="h3 mb-3 font-weight-normal">Iniciar sesion</h1>
-                        <label for="inputEmail" class="sr-only">Correo</label>
-                        <input type="email" id="correo" class="form-control" placeholder="Correo" required autofocus>
-                        <br>
-                        <label for="inputPassword" class="sr-only">Contraseña</label>
-                        <input type="password" id="contrasenia" class="form-control" placeholder="Contraseña" required>
-                        <br>
-                        <button class="btn btn-lg btn-primary btn-block">Iniciar sesion</button>
-                        <button class="btn btn-lg btn-primary btn-block"
-                            onclick="window.location='/registro'">Registrarse</button>
-                    </form>
-                </center>
+            <center>
 
-            </div>
+
+                <form class="form-signin" id="create-sesion">
+                    {{!-- <img class="mb-auto" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> --}}
+
+                    <label for="inputEmail" class="sr-only">Correo</label>
+                    <input type="email" id="correo" class="form-control-lg" placeholder="Correo"  required autofocus>
+                    <br><br>
+                    <label for="inputPassword" class="sr-only">Contraseña</label>
+                    <input type="password" id="contrasenia" class="form-control-lg" placeholder="Contraseña" required>
+                    <br><br>
+                    <button class="btn btn-lg btn-primary btn-lg">Iniciar sesion</button>
+                    <br><br>
+                    <button class="btn btn-lg btn-primary btn-lg"
+                        onclick="window.location='/registro'">Registrarse</button>
+                </form>
+            </center>
+
         </div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -71,4 +88,5 @@
         });
     </script>
 </body>
+<br><br><br><br><br><br><br><br>
 {{> footer }}
