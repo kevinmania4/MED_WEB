@@ -1,9 +1,24 @@
 {{> header }}
 {{> head }}
 
+<style type="text/css">
+    body,
+    html {
+
+        height: 100%;
+        background-repeat: no-repeat;
+        background: url(assets/img/web2.jpg) no-repeat center center fixed;
+        background-size: 100% 100%;
+        opacity: 5;
+        filter: alpha(opacity=1);
+    }
+</style>
+
 <body>
-    <br><br><br><br><br><br><br>
-    <br>
+    <br><br><br><br><br><br>
+    <center>
+    <h1 class="mb-3"> Registro</h1>
+    </center>
 
 
     <!-- Slide 1 -->
@@ -20,19 +35,18 @@
                         </div> --}}
 
             <div class="col-md-8 order-md-1">
-                <h4 class="mb-3">Iniciar sesión</h4>
                 <br>
                 <form class="needs-validation" novalidate id="create-registro">
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Nombre</label>
+                            <label for="firstName"><b>Nombre</b></label>
                             <input id="nombre" type="text" class="form-control" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Este campo es obligatorio.
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="lastName">Apellido</label>
+                            <label for="lastName"><b>Apellido</b></label>
                             <input id="apellido" type="text" class="form-control" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Este campo es obligatorio.
@@ -41,7 +55,7 @@
                     </div>
 
                     <div class="col-md-6 mb-3">
-                        <label for="lastName">Cedula</label>
+                        <label for="lastName"><b>Cedula</b></label>
                         <input id="cedula" type="text" class="form-control" placeholder="" value="" required>
                         <div class="invalid-feedback">
                             Este campo es obligatorio.
@@ -49,10 +63,10 @@
                     </div>
                     <div class=" mb-3">
                         <div class="col-md-5 mb-3">
-                            <label for="country">Tipo de Usuario</label>
+                            <label for="country"><b>Tipo de Usuario</b></label>
                             <select id="perfil" class="custom-select d-block w-100" required>
-                                <option value="USER_PACIENTE">Paciente</option>
-                                <option value="USER_MEDICO">Medico</option>
+                                <option value="USER_PACIENTE"><b>Paciente</b></option>
+                                <option value="USER_MEDICO"><b>Medico</b></option>
                             </select>
                             <div class="invalid-feedback">
                                 Seleccione un usuario.
@@ -60,7 +74,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="lastName">Identificacion</label>
+                        <label for="lastName"><b>Identificacion</b></label>
                         <input id="identificacion" type="text" class="form-control" placeholder="" value="" required>
                         <div class="invalid-feedback">
                             Este campo es obligatorio.
@@ -70,7 +84,7 @@
 
 
                     <div class="col-md-6 mb-3">
-                        <label for="email">Email </label>
+                        <label for="email"><b>Email</b> </label>
                         <input id="correo" type="email" class="form-control" placeholder="you@example.com" value=""
                             required>
                         <div class="invalid-feedback">
@@ -79,7 +93,7 @@
                     </div>
 
                     <div class="col-md-6 mb-3">
-                        <label for="address2">Contrasenia </label>
+                        <label for="address2"><b>Contrasenia</b> </label>
                         <input id="contrasenia" type="password" class="form-control" placeholder="password" value=""
                             required>
                     </div>
@@ -87,13 +101,13 @@
 
                     <div class="col-md-6 mb-3">
                         <hr class="col-md-6 mb-3">
-                        <button class="btn btn-lg btn-primary btn-block">Aceptar</button>
+                        <button class="btn btn-lg btn-primary btn-lg">Registrarse</button>
 
 
 
                     </div>
                 </form>
-                <button class="btn btn-primary btn-lg btn-block" onclick="window.location='/logeo'">Iniciar
+                <button class="btn btn-lg btn-primary btn-lg" onclick="window.location='/logeo'">Iniciar
                     sesion</button>
             </div>
 
@@ -146,4 +160,5 @@
     </script>
 
 </body>
+<br><br>
 {{> footer }}
