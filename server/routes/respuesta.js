@@ -48,4 +48,8 @@ app.post("/respuesta", (req, res) => {
     });
 });
 
+app.get('/paciente', (req, res) => {
+    res.render('GUI_Paciente');
+});
+
 module.exports = app;

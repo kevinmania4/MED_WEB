@@ -27,6 +27,7 @@ app.use(require("./routes/insertarNuevoSintoma"));
 app.use(require("./routes/insertarTratamiento"));
 app.use(require("./routes/respuesta"));
 app.use(require("./routes/ingresoCredenciales"));
+app.use(require("./routes/registroTratamiento"));
 //conexion a la base de dartos
 
 mongoose.connect(
@@ -44,3 +45,5 @@ mongoose.connect(
 app.listen(process.env.PORT, () => {
     console.log(`Escuchando en el puerto ${process.env.PORT}`);
 });
+
+//https://github.com/rtufino/restful_01

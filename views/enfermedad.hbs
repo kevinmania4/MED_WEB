@@ -53,7 +53,7 @@
                 response.enfermedades.forEach(function(enfer){
                     let mensaje="";
                     mensaje+=""
-                tbodyEl.append('<tr><th>'+enfer.descripcion+'</th><th ><a href="/nuevoS?idE='+enfer._id+'">Seleccionar</a></th></tr>');
+                tbodyEl.append('<tr><th>'+enfer.descripcion+'</th><th ><a href="/sintoma?idE='+enfer._id+'">Seleccionar</a></th></tr>');
             });
           }
         });
@@ -75,10 +75,11 @@
                         url:'/enfermedades',
                         contentType:'application/json',
                         success:function(response){
+                            
                             var tbodyEl=$('tbody');
                             tbodyEl.html('');
                             response.enfermedades.forEach(function(enfer){
-                                tbodyEl.append('<tr><th>'+enfer.descripcion+'</th><th><a href="/nuevoS?idE='+enfer._id+'">Seleccionar</a></th></tr>');
+                                tbodyEl.append('<tr><th>'+enfer.descripcion+'</th><th><a href="/sintoma?idE='+enfer._id+'">Seleccionar</a></th></tr>');
                             });
                         }
                     });
