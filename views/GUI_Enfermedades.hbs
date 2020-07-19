@@ -1,77 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<h1>AJAX</h1>
-<button id="get-button">Tead Get</button>
-<form id="create-form">
-  <input type="text" id="create-input">
-  <button>Cretat/Port</button>
+{{> header }}
+{{> head }}
 
+<style type="text/css">
+  body,
+  html {
+
+    height: 100%;
+    background-repeat: no-repeat;
+    background: url(assets/img/fondo3.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+    opacity: 5;
+    filter: alpha(opacity=1);
+  }
+</style>
+
+<br><br><br><br><br><br>
+<center>
+  <h1>AJAX</h1>
+
+
+
+  <form id="create-form">
+    <input type="text" id="create-input">
+    <br><br>
+    <button class="btn btn-lg btn-primary btn-lg">Cretat/Port</button>
+  </form>
+  <br><br>
+  <button class="btn btn-lg btn-primary btn-lg" id="get-button">Tead Get</button>
+</center>
+<hr>
+<center>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nsme</th>
+      <th>action</th>
+    </tr>
+    <tbody></tbody>
+
+  </table>
+</center>
+<hr>
+<h1 style="position: absolute; top: 140px; left:25px;"><b>Enfermedad</b></h1>
+  <table border="1" style="position: absolute; top: 200px; left:25px;">
+    <tr>
+      <td><b>Enfermedad</b></td>
+    </tr>
+    {{#each usuarios}}
+    <tr bgcolor="black">
+      <td id="{{_id}}"><a href="/sintoma/{{_id}}">{{descripcion}}</a>
+      </td>
+    <tr>
+      <td>{{_id}}</td>
+    </tr>
+    {{/each}}
+
+    </tr>
+  </table>
+<center>
+<form action="/enfermedad" method="post">
+  <label for="name">Enfermedad</label></br>
+  <input type="text" id="name" name="descripcion"></br>
+  <br>
+  <button class="btn btn-lg btn-primary btn-lg" type="submit">Envíe su mensaje</button>
 </form>
-<hr>
-<table>
-  <tr>>
-    <th>ID</th>
-    <th>Nsme</th>
-    <th>action</th>
-  </tr>
-<tbody></tbody>
+</center>
+<!-- Para ela jax-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script>
+  console.log('Hola como estas')
+  $(function () {
+    $('#get-button').on('click', function () {
+      $.ajax({
+        url: '/enfermedades',
+        contentType: 'application/json',
+        success: function (response) {
+          var tbodyEl = $('tbody');
+          tbodyEl.html('');
 
-</table>
-
-<hr>
-<hr>
-<table border="1">
-  <tr>
-    <td>Enfermedad</td>
-  </tr>
-{{#each usuarios}}
-<tr>
-    <td id="{{_id}}"><a href="/sintoma/{{_id}}">{{descripcion}}</a> 
-</td>
-<tr>
-  <td>{{_id}}</td>
-</tr>
-{{/each}}
-
-  </tr>
-</table>
-    
-    <form action="/enfermedad" method="post">
-        <label for="name">Enfermedad</label></br>
-        <input type="text" id="name" name="descripcion"></br>
-        <button type="submit">Envíe su mensaje</button>
-    </form>
-    <!-- Para ela jax-->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script>
-    console.log('Hola como estas')
-    $(function() {
-    $('#get-button').on('click', function() {
-        $.ajax({
-          url:'/enfermedades',
-          contentType:'application/json',
-          success:function(response){
-            var tbodyEl=$('tbody');
-            tbodyEl.html('');
-
-            response.enfermedades.forEach(function(enfer){
-              tbodyEl.append('\
+          response.enfermedades.forEach(function (enfer) {
+            tbodyEl.append('\
               <tr>\
-                <td>'+enfer.descripcion +' </td>\
+                <td>'+ enfer.descripcion + ' </td>\
               </tr>');
-            });
+          });
 
-          }
-        });
+        }
+      });
     });
-});
-    </script>
+  });
+</script>
 
-</body>
-</html>
+<br><br>
+

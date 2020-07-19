@@ -1,14 +1,27 @@
 {{> header }}
 {{> head }}
 
+<style type="text/css">
+    body,
+    html {
+
+        height: 100%;
+        background-repeat: no-repeat;
+        background: url(assets/img/fondo3.jpg) no-repeat center center fixed;
+        background-size: 100% 100%;
+        opacity: 5;
+        filter: alpha(opacity=1);
+    }
+</style>
+
 <body>
     <br><br><br><br><br><br><br>
     <br>
     <center>
-        <div class="section-title">
-            <h3> Enfermedad</h3>
+        <div class="section-title" style="position: absolute; top: 140px; left:25px;">
+            <h3><b>Enfermedad</b> </h3>
         </div>
-        <table class="egt" border="1">
+        <table class="egt" border="1" style="position: absolute; top: 200px; left:25px;">
             <thead>
             <tr>
                 <th>Tabla enfermedad</th>
@@ -20,7 +33,7 @@
         <br>
         <form id="create-form">
             <div class="col-md-6 mb-3">
-                <label for="enfermedad">Ingrese enfermedad</label>            
+                <label for="enfermedad"><b>Ingrese enfermedad</b></label>            
                 <input type="text" class="form-control" id="create-input" placeholder="" value="" required>
                 
                 <div class="invalid-feedback">
@@ -29,7 +42,7 @@
             </div>
             <br> 
             <div class="text-center">
-                <button>Enviar</button>
+                <button class="btn btn-lg btn-primary btn-lg">Enviar</button>
             </div>
         </form>
         <br>
@@ -90,4 +103,3 @@
     });
     </script>
 </body>
-{{> footer }}
