@@ -1,1 +1,2 @@
 node_modules
+<textarea id="des_tratamiento" rows="10" cols="50" placeholder="Ingrese tratamiento" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></textarea>
