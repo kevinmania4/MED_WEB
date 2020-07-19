@@ -20,14 +20,12 @@ require("../hbs/helpers");
 
 //app.use(require("./routes/pagina"));
 
-//incluir rutas de /usuario
-app.use(require("./routes/aniadirUsuario"));
-app.use(require("./routes/aniadirEnfermedad"));
-app.use(require("./routes/insertarNuevoSintoma"));
-app.use(require("./routes/insertarTratamiento"));
-app.use(require("./routes/respuesta"));
-app.use(require("./routes/ingresoCredenciales"));
-app.use(require("./routes/registroTratamiento"));
+//incluir rutas
+app.get('/', (req, res) => {
+    res.render('casa');
+});
+app.use(require("./routes/index"));
+
 //conexion a la base de dartos
 
 mongoose.connect(
