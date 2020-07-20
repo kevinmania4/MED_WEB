@@ -6,7 +6,7 @@
 
         height: 100%;
         background-repeat: no-repeat;
-        background: url(assets/img/web4.jpg) no-repeat center center fixed;
+        background: url(assets/img/fondo3.jpg) no-repeat center center fixed;
         background-size: 100% 100%;
         opacity: 5;
         filter: alpha(opacity=1);
@@ -21,11 +21,16 @@
 
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-        <div class="carousel-inner" role="listbox">
+        {{!-- <div class="carousel-inner" role="listbox"> --}}
 
-            <!-- Slide 1 -->
             <div class="carousel-item active">
                 <center>
+                    <!--
+                    <textarea id="des_tratamiento" rows="10" cols="50" placeholder="Ingrese tratamiento" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></textarea>
+                    <div class="validate"></div>
+                    -->
+                    <br> <br>
+                    {{!-- <div class="text-center"><input type="submit" value="Aceptar"></div> --}}
                     <form class="form-signin" id="tratamiento">
                         <textarea id="des_tratamiento" rows="10" cols="50" placeholder="Ingrese tratamiento"
                             data-rule="minlen:4" data-msg="Please enter at least 4 chars"></textarea>
@@ -36,8 +41,8 @@
                     </form>
                 </center>
             </div>
-        </div>
-
+        {{!-- </div> --}}
+        <input visibility: hidden type="button" id="IDE" value="{{ idEnfermedad }}">    
     </div>
 </section>
 <input visibility: hidden type="button" id="IDE" value="{{ idEnfermedad }}">
