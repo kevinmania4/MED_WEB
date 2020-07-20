@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/sintoma', (req, res) => {
     let idEnfermedad = req.query.idE;
-    console.log("GET Sintomas", idEnfermedad);
+    //console.log("GET Sintomas", idEnfermedad);
     res.render('GUIsintomatologia', { idEnfermedad });
 });
 
@@ -43,10 +43,10 @@ app.post('/ingresoRelacion', (req, res) => {
     let body = req.body
     let enfermedades = body.enfermedad;
     let sintomas = body.IDsintomas;
-    console.log(enfermedades);
-    console.log(sintomas.length);
+    //console.log(enfermedades);
+    //console.log(sintomas.length);
     for (let i = 0; i < sintomas.length; i++) {
-        console.log(sintomas[i]);
+        //console.log(sintomas[i]);
         let relacion = new Relacion({
             sintoma: sintomas[i],
             enfermedad: enfermedades
