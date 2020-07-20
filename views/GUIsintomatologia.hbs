@@ -22,56 +22,60 @@
 
     <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-    <div class="carousel-inner" role="listbox">
+    {{!-- <div class="carousel-inner" role="listbox"> --}}
 
-        <!-- Slide 1 -->
-        <center>
+    <!-- Slide 1 -->
 
-            <div id="contentTabla">
-                <table class="egt" border="1">
-                    <thead>
-                        <tr>
-                            <th><b>Tabla sintomatologia</b></th>
-                        </tr>
-                    </thead>
-                    <tbody id="TB"></tbody>
-                </table>
-            </div>
-            <hr>
-            <div id="contenedor">
-                <div class="descripccion">
-                    <h1><b>Sintomas selecionados</b> </h1>
-                </div>
-            </div>
-            <hr>
-            <form id="get-tratamiento">
-                <button>Aceptar</button>
-            </form>
-            <br>
-            <div class="section-title">
-                <form id="create-form">
-                    <h1><b>Ingrese sintoma</b></h1>
-                    <!--<h2 name="id" value={{id_enfermedad}}> </h2>-->
-                    <input type="text" name="descripcion" class="form-control" id="create-sintoma" placeholder="Sintoma"
-                        data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
 
-                    <div class="validate"></div>
-                    <br> <br>
-                    <!--<form class="form-signin" id="create-sesion">-->
-                    <button class="btn btn-lg btn-primary btn-lg" type="submit">Guardar</button>
-                    <!--</form>-->
-                    {{!-- <div class="text-center">
+    <div id="contentTabla" style="position: absolute; top: 200px; left:25px;">
+        <table class="table table-hover" border="1">
+            <thead>
+                <tr>
+                    <th><b>Tabla sintomatologia</b></th>
+                </tr>
+            </thead>
+            <tbody id="TB"></tbody>
+        </table>
+        <br>
+        <hr>
+        <h1></h1>
+    </div>
+
+
+    <div id="contenedor" style="position: absolute; top: 150px; left:400px;" >
+        <div class="descripccion">
+            <h1><b>Sintomas selecionados</b> </h1>
+        </div>
+    </div>
+
+    <form id="get-tratamiento" style="position: absolute; top: 150px; left:850px;">
+        <button class="btn btn-lg btn-primary btn-lg">Aceptar</button>
+    </form>
+    <br>
+    <div class="section-title" style="position: absolute; top: 150px; left:1200px;">
+        <form id="create-form">
+            <h1><b>Ingrese sintoma</b></h1>
+            <!--<h2 name="id" value={{id_enfermedad}}> </h2>-->
+            <input type="text" name="descripcion" class="form-control-lg" id="create-sintoma" placeholder="Sintoma"
+                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+
+            <div class="validate"></div>
+            <br> <br>
+            <!--<form class="form-signin" id="create-sesion">-->
+            <button class="btn btn-lg btn-primary btn-lg" type="submit">Guardar</button>
+            <!--</form>-->
+            {{!-- <div class="text-center">
                         <button type="submit">Aceptar </button>
                     </div> --}}
-                </form>
+        </form>
 
-            </div>
-
-            <div class="section-title">
-
-            </div>
-            <input visibility: hidden type="button" id="IDE" value="{{ idEnfermedad }}">
     </div>
+
+    <div class="section-title">
+
+    </div>
+    <input visibility: hidden type="button" id="IDE" value="{{ idEnfermedad }}">
+    {{!-- </div> --}}
 
 </body>
 
@@ -176,6 +180,3 @@
 
     });
 </script>
-
-
-{{> footer }}
