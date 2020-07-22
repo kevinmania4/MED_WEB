@@ -2,35 +2,9 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const _ = require("underscore");
 const Usuario = require("../models/usuario");
-
+const { verificaToken, ver_doc } = require("../middlewares/autenticacion");
 const app = express();
 
-app.get("/registro", (req, res) => {
-    res.render("GUIregistro");
-    // console.log("registro");
-});
-
-app.post("/registrar", (req, res) => {
-    let body = req.body;
-    let usuario = new Usuario({
-        cedula: body.cedula,
-        nombre: body.nombre,
-        apellido: body.apellido,
-        correo: body.correo,
-        contrasenia: body.contrasenia,
-        identificacion: body.identificacion,
-        perfil: body.perfil,
-    });
-    usuario.save((err, usuarioDB) => {
-        if (err) {
-            return res.status(400).send(err)
-        }
-        res.send({ usuario: usuarioDB });
-    });
-});
-
-//--
-/*
 app.get("/usuario", (req, res) => {
     let desde = req.query.desde || 0;
     desde = Number(desde);
@@ -54,6 +28,7 @@ app.get("/usuario", (req, res) => {
             });
         });
 });
+
 app.post("/usuario", (req, res) => {
     let body = req.body;
     let usuario = new Usuario({
@@ -61,7 +36,7 @@ app.post("/usuario", (req, res) => {
         nombre: body.nombre,
         apellido: body.apellido,
         correo: body.correo,
-        contrasenia: body.contrasenia,
+        contrasenia: bcrypt.hashSync(body.contrasenia, 10),
         identificacion: body.identificacion,
     });
     usuario.save((err, usuarioDB) => {
@@ -78,7 +53,39 @@ app.post("/usuario", (req, res) => {
         res.write("<a href='/enfermedad'>Recargar página</a>");
     });
 });
-*/
+app.get("/registro", (req, res) => {
+    /*
+            return res.json({
+                usuario: req.usuario,
+                correo: body.correo,
+                contrasenia: body.contrasenia,
+            });
+            */
+    res.render("GUIregistro");
+    // console.log("registro");
+});
 
+app.post("/registro", [verificaToken, ver_doc], (req, res) => {
+    let body = req.body;
+    let usuario = new Usuario({
+        cedula: body.cedula,
+        nombre: body.nombre,
+        apellido: body.apellido,
+        correo: body.correo,
+        contrasenia: bcrypt.hashSync(body.contrasenia, 10),
+        identificacion: body.identificacion,
+        perfil: body.perfil,
+    });
+    usuario.save((err, usuarioDB) => {
+        if (err) {
+            return res.status(400).json({
+                ok: false,
+                err,
+            });
+        }
+
+        res.send({ usuario: usuarioDB });
+    });
+});
 
 module.exports = app;

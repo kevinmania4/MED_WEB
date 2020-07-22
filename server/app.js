@@ -21,8 +21,8 @@ require("../hbs/helpers");
 //app.use(require("./routes/pagina"));
 
 //incluir rutas
-app.get('/', (req, res) => {
-    res.render('casa');
+app.get("/", (req, res) => {
+    res.render("casa");
 });
 app.use(require("./routes/index"));
 
