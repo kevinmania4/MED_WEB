@@ -27,7 +27,7 @@
             width : 400px;
             height : 300px;
             overflow : auto;">
-       
+
     </select>
 
 </div>
@@ -35,7 +35,7 @@
 <div style="position: absolute; top: 250px; right:100px;">
     <h1>Información recomendada</h1>
     <!--<textarea name="comentarios" rows="14" cols="100"></textarea>-->
-    <blockquote id="recipiente"></blockquote>
+    <textarea id="recipiente"></textarea>
 
 </div>
 <h1 style="position: absolute; top: 250px; left:600px;">Síntomas elegidos</h1>
@@ -93,19 +93,19 @@
         console.log("id:", id)
         $('#respuesta').on('submit', (event) => {
             event.preventDefault();
+            let recipiente = $('#recipiente');
+//            recipiente.val("");
             $.ajax({
                 url: '/responder',
                 method: 'POST',
                 contentType: 'application/json',
-                data: JSON.stringify({ sintomas: id}),
-                success:(respuesta)=>{
-                    let recipiente=$('#recipiente');
-                    console.log(respuesta);
-                    respuesta.tratamientosRes.forEach((res)=>{
+                data: JSON.stringify({ sintomas: id }),
+                success: (respuesta) => {
+                    
+                    respuesta.tratamientosRes.forEach((res) => {
                         console.log(res.descripcion);
-                        recipiente.append('<p>'+res.descripcion+'</p>');
+                        recipiente.append( res.descripcion );
                     });
-                    //recipiente.append('<p>'+respuesta+'</p>');
                 }
             });
         });
