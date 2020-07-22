@@ -17,7 +17,7 @@
 <body>
 
 
-    <h1 style="position: absolute; top: 150px; left:25px;"><b>Sintomas</b></h1>
+    <h1 style="position: absolute; top: 150px; left:150px;"><b>Síntomas</b></h1>
 
 
     <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
@@ -26,8 +26,19 @@
 
     <!-- Slide 1 -->
 
+<div  style="position: absolute; top: 200px; left:25px;">
+    <select id="contentTabla"  name="transporte" size="2" style="
+            width : 500px;
+            height : 300px;
+            overflow : auto;">
+       
+    </select>
 
-    <div id="contentTabla" style="position: absolute; top: 200px; left:25px;">
+</div>
+
+
+
+    {{!-- <div id="contentTabla" style="position: absolute; top: 200px; left:25px;">
         <table class="table table-hover" border="1">
             <thead>
                 <tr>
@@ -39,24 +50,43 @@
         <br>
         <hr>
         <h1></h1>
-    </div>
+    </div> --}}
 
 
-    <div id="contenedor" style="position: absolute; top: 150px; left:400px;" >
+    {{!-- <div id="contenedor" style="position: absolute; top: 150px; left:600px;" >
         <div class="descripccion">
-            <h1><b>Sintomas selecionados</b> </h1>
+            <h1><b>Síntomas selecionados</b> </h1>
         </div>
-    </div>
+    </div> --}}
 
-    <form id="get-tratamiento" style="position: absolute; top: 150px; left:850px;">
+<h1 style="position: absolute; top: 150px; left:600px;"><b>Síntomas seleccionados</b></h1>
+<div style="position: absolute; top: 200px; left:560px;">
+    <select id="seleccionados" name="transporte" size="2" style="
+            width : 500px;
+            height : 150px;
+            overflow : auto;">
+    </select>
+    <br><br><br>
+    <center>
+        <br><br>
+        <form id="get-tratamiento" >
         <button class="btn btn-lg btn-primary btn-lg">Aceptar</button>
     </form>
+
+        {{!-- <button type="button" class="btn btn-primary">Salir</button> --}}
+    </center>
+</div>
+
+    {{!-- <form id="get-tratamiento" style="position: absolute; top: 150px; left:1030px;">
+        <button class="btn btn-lg btn-primary btn-lg">Aceptar</button>
+    </form> --}}
     <br>
+
     <div class="section-title" style="position: absolute; top: 150px; left:1200px;">
         <form id="create-form">
-            <h1><b>Ingrese sintoma</b></h1>
+            <h1><b>Ingrese síntoma</b></h1>
             <!--<h2 name="id" value={{id_enfermedad}}> </h2>-->
-            <input type="text" name="descripcion" class="form-control-lg" id="create-sintoma" placeholder="Sintoma"
+            <input type="text" name="descripcion" class="form-control-lg" id="create-sintoma" placeholder="Síntoma"
                 data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
 
             <div class="validate"></div>
@@ -180,3 +210,5 @@
 
     });
 </script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{{> footer }}
