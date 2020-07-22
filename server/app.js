@@ -21,16 +21,16 @@ require("../hbs/helpers");
 //app.use(require("./routes/pagina"));
 
 //incluir rutas
-app.get('/', (req, res) => {
-    res.render('casa');
+app.get("/", (req, res) => {
+    res.render("casa");
 });
 app.use(require("./routes/index"));
 
 //conexion a la base de dartos
 
 mongoose.connect(
-    //"mongodb+srv://kevin:kevin@pruebamongodb-6oz0y.mongodb.net/MED_WEB_ATLAS?retryWrites=true&w=majority", { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
-    "mongodb://localhost:27017/MED_WEB_BDD", { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
+    "mongodb+srv://kevin:kevin@pruebamongodb-6oz0y.mongodb.net/MED_WEB_ATLAS?retryWrites=true&w=majority", { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
+    //"mongodb://localhost:27017/MED_WEB_BDD", { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
 
     (err, res) => {
         if (err) throw err;
