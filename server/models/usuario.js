@@ -32,7 +32,7 @@ let usurarioSchema = new Schema({
     },
     identificacion: {
         type: Number,
-        required: [true, "la cedula es requerida"],
+        required: false,
         unique: true,
     },
     perfil: {

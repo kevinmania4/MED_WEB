@@ -120,7 +120,12 @@
                 data: JSON.stringify({ sintomas: id}),
                 success:(respuesta)=>{
                     let recipiente=$('#recipiente');
-                    recipiente.append('<p>'+respuesta+'</p>');
+                    console.log(respuesta);
+                    respuesta.tratamientosRes.forEach((res)=>{
+                        console.log(res.descripcion);
+                        recipiente.append('<p>'+res.descripcion+'</p>');
+                    });
+                    //recipiente.append('<p>'+respuesta+'</p>');
                 }
             });
         });
