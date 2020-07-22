@@ -17,7 +17,7 @@
 <body>
 
 
-    <h1 style="position: absolute; top: 150px; left:25px;"><b>Sintomas</b></h1>
+    <h1 style="position: absolute; top: 150px; left:150px;"><b>Síntomas</b></h1>
 
 
     <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
@@ -26,8 +26,19 @@
 
     <!-- Slide 1 -->
 
+    <div style="position: absolute; top: 200px; left:25px;">
+        <select id="contentTabla" name="transporte" size="2" style="
+            width : 500px;
+            height : 300px;
+            overflow : auto;">
 
-    <div id="contentTabla" style="position: absolute; top: 200px; left:25px;">
+        </select>
+
+    </div>
+
+
+
+    {{!-- <div id="contentTabla" style="position: absolute; top: 200px; left:25px;">
         <table class="table table-hover" border="1">
             <thead>
                 <tr>
@@ -39,24 +50,43 @@
         <br>
         <hr>
         <h1></h1>
-    </div>
+    </div> --}}
 
 
-    <div id="contenedor" style="position: absolute; top: 150px; left:400px;" >
+    {{!-- <div id="contenedor" style="position: absolute; top: 150px; left:600px;" >
         <div class="descripccion">
-            <h1><b>Sintomas selecionados</b> </h1>
+            <h1><b>Síntomas selecionados</b> </h1>
         </div>
+    </div> --}}
+
+    <h1 style="position: absolute; top: 150px; left:600px;"><b>Síntomas seleccionados</b></h1>
+    <div style="position: absolute; top: 200px; left:560px;">
+        <select id="seleccionados" name="transporte" size="2" style="
+            width : 500px;
+            height : 150px;
+            overflow : auto;">
+        </select>
+        <br><br><br>
+        <center>
+            <br><br>
+            <form id="get-tratamiento">
+                <button class="btn btn-lg btn-primary btn-lg">Aceptar</button>
+            </form>
+
+            {{!-- <button type="button" class="btn btn-primary">Salir</button> --}}
+        </center>
     </div>
 
-    <form id="get-tratamiento" style="position: absolute; top: 150px; left:850px;">
+    {{!-- <form id="get-tratamiento" style="position: absolute; top: 150px; left:1030px;">
         <button class="btn btn-lg btn-primary btn-lg">Aceptar</button>
-    </form>
+    </form> --}}
     <br>
+
     <div class="section-title" style="position: absolute; top: 150px; left:1200px;">
         <form id="create-form">
-            <h1><b>Ingrese sintoma</b></h1>
+            <h1><b>Ingrese síntoma</b></h1>
             <!--<h2 name="id" value={{id_enfermedad}}> </h2>-->
-            <input type="text" name="descripcion" class="form-control-lg" id="create-sintoma" placeholder="Sintoma"
+            <input type="text" name="descripcion" class="form-control-lg" id="create-sintoma" placeholder="Síntoma"
                 data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
 
             <div class="validate"></div>
@@ -89,30 +119,32 @@
         $.ajax({
             url: '/consultaSintoma',
             contentType: 'application/json',
-            success: function (response) {
-                var tbodyEl = $('tbody');
-                tbodyEl.html('');
-                response.sintomas.forEach(function (sintoma) {
-                    tbodyEl.append('<tr><th id="' + sintoma._id + '0">' + sintoma.descripcion + '</th>\
-                    <th><input visibility: hidden type="button" id="'+ sintoma._id + '" value="' + sintoma.descripcion + '"></th></tr>');
-                    $('#' + sintoma._id + '0').on('click', function (event) {
-                        event.preventDefault();
-                        var ids = sintoma._id;
-                        var valor = $('#' + sintoma._id + '').val();
-                        id.push(ids);
-                        $('#contenedor').append('<div id="0' + sintoma._id + '" ><input visibility: hidden type="button" id="00' + sintoma._id + '" value="' + sintoma._id + '">' + valor + '</div>');
-                    });
-                    $('#contenedor').on('click', '#0' + sintoma._id + '', function () {
-                        var ll = $('#00' + sintoma._id + '').val();
-                        console.log("ITEM: ", ll)
-                        var i = id.indexOf(ll);
-                        console.log("Indice: ", i);
-                        id.splice(i, 1);
-                        var contiene = $('#0' + sintoma._id + '').remove();
-                    });
+            success: (response) => {
+                let cont_sintomas = $('#contentTabla');
+                response.sintomas.forEach((sintoma) => {
+                    cont_sintomas.append('<option value="' + sintoma._id + '" selected="selected" >' + sintoma.descripcion + '</option>');
                 });
             }
         });
+        $('#contentTabla').on('click', (event) => {
+            event.preventDefault();
+            let selecionado = $("#contentTabla option:selected").text();
+            let id_seleccionado = $('#contentTabla').val();
+            //console.log(selecionado);
+            //console.log(id_seleccionado);
+            id.push(id_seleccionado);
+            $('#seleccionados').append('<option value="' + id_seleccionado + '" selected="selected">' + selecionado + '</option>');
+        });
+        $('#seleccionados').on('click', (event) => {
+            event.preventDefault();
+            //var selecionado = $("#seleccionados option:selected").text();
+            let id_seleccionado = $('#seleccionados').val();
+            console.log(id_seleccionado);
+            let i = id.indexOf(id_seleccionado);
+            id.splice(i, 1);
+            $('#seleccionados option:selected').remove();
+        });
+        console.log("id:", id)
 
 
         $('#create-form').on('submit', function (event) {
@@ -131,27 +163,17 @@
                     $.ajax({
                         url: '/consultaSintoma',
                         contentType: 'application/json',
-                        success: function (response) {
-                            var tbodyEl = $('tbody');
-                            tbodyEl.html('');
-                            response.sintomas.forEach(function (sintoma) {
-                                tbodyEl.append('<tr><th id="' + sintoma._id + '0">' + sintoma.descripcion + '</th>\
-                                <th><input visibility: hidden type="button" id="'+ sintoma._id + '" value="' + sintoma.descripcion + '"></th></tr>');
-                                $('#' + sintoma._id + '0').on('click', function (event) {
-                                    event.preventDefault();
-                                    var ids = sintoma._id;
-                                    var valor = $('#' + sintoma._id + '').val();
-                                    id.push(ids);
-                                    $('#contenedor').append('<div id="0' + sintoma._id + '" ><input visibility: hidden type="button" id="00' + sintoma._id + '" value="' + sintoma._id + '">' + valor + '</div>');
-                                });
-                                $('#contenedor').on('click', '#0' + sintoma._id + '', function () {
-                                    var ll = $('#00' + sintoma._id + '').val();
-                                    console.log("ITEM: ", ll)
-                                    var i = id.indexOf(ll);
-                                    console.log("Indice: ", i);
-                                    id.splice(i, 1);
-                                    var contiene = $('#0' + sintoma._id + '').remove();
-                                });
+                        success: (response) => {
+                            let cont_sintomas = $('#contentTabla');
+                            let elemento = $('#contentTabla option');
+                            $.each(elemento,(i,v)=>{
+                                let value=v.value;
+                                //console.log("El value_->",value);
+                                $("#contentTabla option[value="+value+"]").remove();
+                            });
+
+                            response.sintomas.forEach((sintoma) => {
+                                cont_sintomas.append('<option value="' + sintoma._id + '" selected="selected" >' + sintoma.descripcion + '</option>');
                             });
                         }
                     });
@@ -161,6 +183,7 @@
 
         });
         //console.log("id_afuera",id)
+
         $('#get-tratamiento').on('submit', function (event) {
             event.preventDefault();
             var idee = $('#IDE');
@@ -172,11 +195,11 @@
                 success: function (response) {
                     //console.log(response);
                     window.location = response
-
                 }
             });
-
         });
 
     });
 </script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{{> footer }}
