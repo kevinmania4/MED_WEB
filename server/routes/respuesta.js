@@ -2,10 +2,15 @@ const express = require("express");
 const Relacion = require("../models/relacion");
 const Sintoma = require("../models/sintoma");
 const Tratamiento = require("../models/tratamiento");
+const { verificaToken, ver_doc } = require("../middlewares/autenticacion");
 
 const app = express();
 var arreglo2 = [];
-app.get('/paciente', (req, res) => {
+
+app.get('/paciente', verificaToken, (req, res) => {
+    // console.log(req.usuario.nombre);
+    // console.log(req.usuario._id);
+    // console.log(req.prueba);
     res.render('GUI_Paciente');
 });
 

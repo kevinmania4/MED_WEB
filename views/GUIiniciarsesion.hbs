@@ -68,16 +68,16 @@
                         contrasenia: contrasenia.val()
                     }),
                     success: function (response) {
-                        console.log(response);
-                        if (response == "USER_PACIENTE") {
-                            window.location = "/"
+                        console.log(response.token);
+                        console.log(response.perfil);
+                        if (response.perfil == "USER_PACIENTE") {
+                            window.location = "/paciente?token="+response.token+""
 
                         }
-                        if (response == "USER_MEDICO") {
-
-                            window.location = "/enfermedad"
+                        if (response.perfil == "USER_MEDICO") {
+                            window.location = "/enfermedad?token="+response.token+""
                         }
-                        if (response == "USER_ADMIN") {
+                        if (response.perfil == "USER_ADMIN") {
 
 
                         }

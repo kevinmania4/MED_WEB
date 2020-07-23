@@ -90,7 +90,7 @@
                 var crear = $('#create-input');
 
                 $.ajax({
-                    url: '/enfermedades',
+                    url: '/enfermedad',
                     method: 'POST',
                     contentType: 'application/json',
                     data: JSON.stringify({ descripcion: crear.val() }),

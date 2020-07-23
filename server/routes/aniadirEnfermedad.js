@@ -1,13 +1,18 @@
 const express = require('express');
 const Enfermedad = require('../models/enfermedad');
-const fetch = require('node-fetch');
-
+//const fetch = require('node-fetch');
+const { verificaToken, ver_doc } = require("../middlewares/autenticacion");
 
 const app = express();
 
-app.get('/enfermedad', (req, res) => {
+app.get('/enfermedad', verificaToken, (req, res) => {
+    console.log(req.usuario);
+    console.log(req.usuario.nombre);
+    console.log(req.usuario._id);
+    console.log("Token------>__>", req.token);
     res.render('enfermedad');
 });
+
 app.get('/enfermedades', (req, res) => {
     Enfermedad.find({})
         .exec((err, enfermedadesDB) => {
@@ -21,8 +26,12 @@ app.get('/enfermedades', (req, res) => {
         });
     //res.send('SI esttaaaaa')
 });
-app.post('/enfermedades', (req, res) => {
+app.post('/enfermedad', (req, res) => {
     let body = req.body
+        ///console.log(req.usuario._id);
+        //console.log(req.prueba);
+
+
     let enfermedad = new Enfermedad({
         descripcion: body.descripcion
     });
