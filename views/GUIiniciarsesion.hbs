@@ -70,16 +70,20 @@
                     success: function (response) {
                         console.log(response.token);
                         console.log(response.perfil);
-                        if (response.perfil == "USER_PACIENTE") {
-                            window.location = "/paciente?token="+response.token+""
+                        console.log(response.estado);
+                        if (response.estado == true) {
+                            if (response.perfil == "USER_PACIENTE") {
+                                window.location = "/paciente?token=" + response.token + ""
 
-                        }
-                        if (response.perfil == "USER_MEDICO") {
-                            window.location = "/enfermedad?token="+response.token+""
-                        }
-                        if (response.perfil == "USER_ADMIN") {
+                            }
+                            if (response.perfil == "USER_MEDICO") {
+                                window.location = "/enfermedad?token=" + response.token + ""
+                            }
+                            if (response.perfil == "USER_ADMIN") {
 
-
+                            }
+                        } else {
+                            alert("Usuario desahibilitado")
                         }
 
                     }

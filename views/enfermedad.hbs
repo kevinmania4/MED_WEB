@@ -56,8 +56,8 @@
         {{!-- </div> --}}
 
         <div class="text-center">
-            <button style="position: absolute; top: 270px; left:1030px;"
-                class="btn btn-lg btn-primary btn-lg" type="submit">Enviar</button>
+            <button style="position: absolute; top: 270px; left:1030px;" class="btn btn-lg btn-primary btn-lg"
+                type="submit">Enviar</button>
         </div>
     </form>
 
@@ -83,7 +83,7 @@
                 let id_seleccionado = $('#sintomas').val();
                 //<a href="/sintoma?idE=' + enfer._id + '">Seleccionar</a
                 //$('#seleccionados').append('<option value="' + id_seleccionado + '" selected="selected">' + selecionado + '</option>');
-                 window.location = "/sintoma?idE="+id_seleccionado+"";
+                window.location = "/sintoma?idE=" + id_seleccionado + "";
             });
             $('#create-form2').on('submit', function (event) {
                 event.preventDefault();

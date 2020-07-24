@@ -6,11 +6,9 @@ const Usuario = require("../models/usuario");
 const { verificaToken, ver_doc } = require("../middlewares/autenticacion");
 const app = express();
 
-
 app.get("/logeo", (req, res) => {
     res.render("GUIiniciarsesion");
 });
-
 
 app.post("/logeo", (req, res) => {
     let body = req.body;
@@ -41,7 +39,7 @@ app.post("/logeo", (req, res) => {
             process.env.SEED, { expiresIn: process.env.CADUCIDAD_TOKEN }
         );
         // res.json({ ok: true, usuario: usuarioDB, token });
-        res.send({ token, perfil: usuarioDB.perfil });
+        res.send({ token, perfil: usuarioDB.perfil, estado: usuarioDB.estado });
     });
 });
 module.exports = app;

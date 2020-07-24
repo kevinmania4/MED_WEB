@@ -94,17 +94,17 @@
         $('#respuesta').on('submit', (event) => {
             event.preventDefault();
             let recipiente = $('#recipiente');
-//            recipiente.val("");
+            //            recipiente.val("");
             $.ajax({
                 url: '/responder',
                 method: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify({ sintomas: id }),
                 success: (respuesta) => {
-                    
+
                     respuesta.tratamientosRes.forEach((res) => {
                         console.log(res.descripcion);
-                        recipiente.append( res.descripcion );
+                        recipiente.append(res.descripcion);
                     });
                 }
             });
