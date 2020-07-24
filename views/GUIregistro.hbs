@@ -40,14 +40,14 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName"><b>Nombre</b></label>
-                            <input id="nombre" type="text" class="form-control" placeholder="" value="" required>
+                            <input id="nombre" type="text" class="form-control" placeholder="" required>
                             <div class="invalid-feedback">
                                 Este campo es obligatorio.
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="lastName"><b>Apellido</b></label>
-                            <input id="apellido" type="text" class="form-control" placeholder="" value="" required>
+                            <input id="apellido" type="text" class="form-control" placeholder="" required>
                             <div class="invalid-feedback">
                                 Este campo es obligatorio.
                             </div>
@@ -56,7 +56,7 @@
 
                     <div class="col-md-6 mb-3">
                         <label for="lastName"><b>Cedula</b></label>
-                        <input id="cedula" type="text" class="form-control" placeholder="" value="" required>
+                        <input id="cedula" type="text" class="form-control" placeholder="" required>
                         <div class="invalid-feedback">
                             Este campo es obligatorio.
                         </div>
@@ -76,18 +76,15 @@
                     </div>
                     <div class="col-md-6 mb-3" id="ide">
                         <label for="lastName"><b>Identificacion</b></label>
-                        <input id="identificacion" type="text" class="form-control" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                            Este campo es obligatorio.
-                        </div>
+                        <input id="identificacion" type="text" class="form-control" placeholder="">
+
                     </div>
 
 
 
                     <div class="col-md-6 mb-3">
                         <label for="email"><b>Email</b> </label>
-                        <input id="correo" type="email" class="form-control" placeholder="you@example.com" value=""
-                            required>
+                        <input id="correo" type="email" class="form-control" placeholder="you@example.com" required>
                         <div class="invalid-feedback">
                             Este campo es obligatorio.
                         </div>
@@ -95,8 +92,7 @@
 
                     <div class="col-md-6 mb-3">
                         <label for="address2"><b>Contrasenia</b> </label>
-                        <input id="contrasenia" type="password" class="form-control" placeholder="password" value=""
-                            required>
+                        <input id="contrasenia" type="password" class="form-control" placeholder="password" required>
                     </div>
 
 
@@ -156,12 +152,13 @@
                     }
                 });
             });
+
             $("#perfil").on("change", function () {
                 var perfil = $(this).val();
-                if (perfil == "USER_MEDICO") {
-                    $("#ide").show();
-                } else if (perfil == "USER_PACIENTE") {
+                if (perfil == "USER_PACIENTE") {
                     $("#ide").hide();
+                } else if (perfil == "USER_MEDICO") {
+                    $("#ide").show();
                     //$("#perfil").val("");
                     $("#fed").empty();
                 } else {

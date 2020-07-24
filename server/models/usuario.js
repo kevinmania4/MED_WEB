@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 let uniqueValidator = require("mongoose-unique-validator");
+const { random } = require("underscore");
 let Schema = mongoose.Schema;
 
 let perfilValidos = {
@@ -33,7 +34,7 @@ let usurarioSchema = new Schema({
     identificacion: {
         type: Number,
         required: false,
-        unique: true,
+        //unique: true,
     },
     perfil: {
         type: String,

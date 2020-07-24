@@ -11,16 +11,43 @@ app.get("/registro", (req, res) => {
 
 app.post("/registro", (req, res) => {
     let body = req.body;
-    let usuario = new Usuario({
-        cedula: body.cedula,
-        nombre: body.nombre,
-        apellido: body.apellido,
-        correo: body.correo,
-        contrasenia: bcrypt.hashSync(body.contrasenia, 10),
-        identificacion: body.identificacion,
-        perfil: body.perfil,
-    });
-    usuario.save((err, usuarioDB) => {
+    let usuario;
+    console.log(body.identificacion == undefined);
+    if (body.identificacion == undefined) {
+        usuario = {
+            cedula: body.cedula,
+            nombre: body.nombre,
+            apellido: body.apellido,
+            correo: body.correo,
+            contrasenia: bcrypt.hashSync(body.contrasenia, 10),
+            //       identificacion: body.identificacion,
+            perfil: body.perfil,
+        };
+    } else {
+        usuario = {
+            cedula: body.cedula,
+            nombre: body.nombre,
+            apellido: body.apellido,
+            correo: body.correo,
+            contrasenia: bcrypt.hashSync(body.contrasenia, 10),
+            identificacion: body.identificacion,
+            perfil: body.perfil,
+        };
+    }
+    //console.log(usuario);
+    // usuario = {
+    //     cedula: body.cedula,
+    //     nombre: body.nombre,
+    //     apellido: body.apellido,
+    //     correo: body.correo,
+    //     contrasenia: bcrypt.hashSync(body.contrasenia, 10),
+    //     identificacion: body.identificacion,
+    //     perfil: body.perfil,
+    // };
+    console.log(usuario);
+    let usuariob = new Usuario(usuario);
+    console.log(usuariob);
+    usuariob.save((err, usuarioDB) => {
         if (err) {
             return res.status(400).json({
                 ok: false,
@@ -31,8 +58,6 @@ app.post("/registro", (req, res) => {
         res.send({ usuario: usuarioDB });
     });
 });
-
-
 
 /*
 app.get("/usuario", (req, res) => {
