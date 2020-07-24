@@ -5,7 +5,8 @@ const jwt = require("jsonwebtoken");
 //=====
 
 let verificaToken = (req, res, next) => {
-    //let token = req.get("token");
+    let tokennn = req.get("token4");
+    console.log("En el HEAD--------->", tokennn);
     let token = req.query.token;
     console.log("validacion-->", token);
 
