@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
 app.use(require("./aniadirUsuario"));
@@ -7,8 +7,6 @@ app.use(require("./insertarNuevoSintoma"));
 app.use(require("./registroTratamiento"));
 app.use(require("./respuesta"));
 app.use(require("./ingresoCredenciales"));
-
-
-
+app.use(require("./actualizarEstadoUsuario"));
 
 module.exports = app;
