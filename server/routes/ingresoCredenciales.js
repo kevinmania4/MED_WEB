@@ -6,11 +6,9 @@ const Usuario = require("../models/usuario");
 const { verificaToken, ver_doc } = require("../middlewares/autenticacion");
 const app = express();
 
-
 app.get("/logeo", (req, res) => {
     res.render("GUIiniciarsesion");
 });
-
 
 app.post("/logeo", (req, res) => {
     let body = req.body;
@@ -22,10 +20,12 @@ app.post("/logeo", (req, res) => {
             });
         }
         if (!usuarioDB) {
-            return res.status(400).json({
-                ok: false,
-                err: { message: "Usuario.. o contraseña incorrectos" },
-            });
+            // return res.status(400).json({
+            //     ok: false,
+            //     err: { message: "Usuario.. o contraseña incorrectos" },
+            // });
+            return res.status(400).send("Usuario.. o contraseña incorrectos")
+
         }
 
         if (!bcrypt.compareSync(body.contrasenia, usuarioDB.contrasenia)) {
@@ -41,7 +41,7 @@ app.post("/logeo", (req, res) => {
             process.env.SEED, { expiresIn: process.env.CADUCIDAD_TOKEN }
         );
         // res.json({ ok: true, usuario: usuarioDB, token });
-        res.send({ token, perfil: usuarioDB.perfil });
+        res.send({ token, perfil: usuarioDB.perfil, estado: usuarioDB.estado });
     });
 });
 module.exports = app;

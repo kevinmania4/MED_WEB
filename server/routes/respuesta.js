@@ -7,7 +7,7 @@ const { verificaToken, ver_doc } = require("../middlewares/autenticacion");
 const app = express();
 var arreglo2 = [];
 
-app.get('/paciente', verificaToken, (req, res) => {
+app.get('/paciente', (req, res) => {
     // console.log(req.usuario.nombre);
     // console.log(req.usuario._id);
     // console.log(req.prueba);
