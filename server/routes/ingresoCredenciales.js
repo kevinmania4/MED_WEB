@@ -20,10 +20,12 @@ app.post("/logeo", (req, res) => {
             });
         }
         if (!usuarioDB) {
-            return res.status(400).json({
-                ok: false,
-                err: { message: "Usuario.. o contraseña incorrectos" },
-            });
+            // return res.status(400).json({
+            //     ok: false,
+            //     err: { message: "Usuario.. o contraseña incorrectos" },
+            // });
+            return res.status(400).send("Usuario.. o contraseña incorrectos")
+
         }
 
         if (!bcrypt.compareSync(body.contrasenia, usuarioDB.contrasenia)) {

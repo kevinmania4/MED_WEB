@@ -1,5 +1,6 @@
 const express = require("express");
 const Tratamiento = require("../models/tratamiento");
+const { verificaToken, ver_doc } = require("../middlewares/autenticacion");
 
 const app = express();
 
@@ -26,31 +27,9 @@ app.post('/ingresaTratamiento', (req, res) => {
                 err,
             });
         }
-        res.send('Tratamiento agregado');
+        res.send(req.token);
     });
 });
 
-/*
-app.post("/tratamiento", (req, res) => {
-    let body = req.body;
-    let tratamiento = new Tratamiento({
-        descripcion: body.descripcion,
-        enfermedad: body.enfermedad,
-        usuario: body.usuario,
-    });
-    tratamiento.save((err, usuarioDB) => {
-        if (err) {
-            return res.status(400).json({
-                ok: false,
-                err,
-            });
-        }
-        res.json({
-            ok: true,
-            usuario: usuarioDB,
-        });
-    });
-});
-*/
 
 module.exports = app;

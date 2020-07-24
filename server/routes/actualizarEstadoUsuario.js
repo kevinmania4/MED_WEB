@@ -3,7 +3,7 @@ const Verusuarios = require("../models/usuario");
 const _ = require("underscore");
 const app = express();
 
-app.get("/verus", (req, res) => {
+app.get("/usuarios", (req, res) => {
     res.render("GUIusuarios");
 });
 app.post("/verusuarios", (req, res) => {

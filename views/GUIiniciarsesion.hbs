@@ -68,25 +68,31 @@
                         contrasenia: contrasenia.val()
                     }),
                     success: function (response) {
-                        console.log(response.token);
+                        console.log(response);
                         console.log(response.perfil);
                         console.log(response.estado);
                         if (response.estado == true) {
                             if (response.perfil == "USER_PACIENTE") {
-                                window.location = "/paciente?token=" + response.token + ""
-
+                                //window.location = "/paciente?token=" + response.token + ""
+                                window.location = "/paciente"
                             }
                             if (response.perfil == "USER_MEDICO") {
-                                window.location = "/enfermedad?token=" + response.token + ""
+                                window.location = "/enfermedad"
                             }
                             if (response.perfil == "USER_ADMIN") {
-
+                                window.location = "/usuarios"
                             }
                         } else {
                             alert("Usuario desahibilitado")
                         }
 
-                    }
+                    },
+                    error: function (xhr, status,error) {
+                        console.log("XHR:>>"+xhr);
+                        console.log("STATUS"+status);
+                        console.log("ERROR "+error);
+                        alert('Disculpe, existió un problema');
+                    },
                 });
             });
 
