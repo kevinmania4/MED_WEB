@@ -87,13 +87,25 @@
                         }
 
                     },
-                    error: function (xhr, status,error) {
-                        console.log("XHR:>>"+xhr);
-                        console.log("STATUS"+status);
-                        console.log("ERROR "+error);
-                        alert('Disculpe, existió un problema');
-                    },
+
+                    error: function (xhr, status, error) {
+                        if (xhr.status === 400) {
+
+                            alert('Correo incorrecto');
+
+                        } else if (xhr.status == 100) {
+
+                            alert('Contraseña incorrecta');
+
+                        }
+                        //console.log("XHR:>>" + xhr);
+                        //console.log("STATUS" + status);
+                        //console.log("ERROR " + error);
+                        // alert('Disculpe, existió un problema');
+                    }
+
                 });
+
             });
 
         });
