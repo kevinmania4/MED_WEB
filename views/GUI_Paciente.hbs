@@ -1,5 +1,5 @@
 {{> header }}
-{{> headMed }}
+{{> headSalir }}
 <style type="text/css">
     body,
     html {
@@ -31,22 +31,23 @@
     </select>
 
 </div>
-<h1 style="position: absolute; top: 250px; left:600px;">Síntomas elegidos</h1>
-<div style="position: absolute; top: 325px; left:500px;">
+<h1 style="position: absolute; top: 250px; left:450px;">Síntomas elegidos</h1>
+<div style="position: absolute; top: 325px; left:470px;">
     <select id="seleccionados" name="transporte" size="2" style="
-            width : 500px;
-            height : 150px;
+            width : 300px;
+            height : 180px;
             overflow : auto;">
     </select>
 
     {{!-- <button type="button" class="btn btn-primary">Salir</button> --}}
 </div>
-<form id="respuesta" style="position: absolute; top: 550px; left:700px;">
+<form id="respuesta" style="position: absolute; top: 550px; left:550px;">
     <button type="submit" class="btn btn-primary">Consultar</button>
 </form>
 
-<div style="position: absolute; top: 250px; right:100px;">
-    <h1>Información recomendada</h1>
+<h1 style="position: absolute; top: 250px; left:850px;">Información recomendada</h1>
+<div style="position: absolute; top: 325px; left:850px;">
+
     <!--<textarea name="comentarios" rows="14" cols="100"></textarea>-->
     <textarea id="recipiente" id="recipiente" style="
             width : 400px;
@@ -93,7 +94,7 @@
         $('#respuesta').on('submit', (event) => {
             event.preventDefault();
             let recipiente = $('#recipiente');
-            //            recipiente.val("");
+            recipiente.html("");
             $.ajax({
                 url: '/responder',
                 method: 'POST',
