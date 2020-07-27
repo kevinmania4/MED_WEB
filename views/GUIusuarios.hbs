@@ -1,6 +1,16 @@
 {{> header }}
 {{> headSalir }}
 <style type="text/css">
+body,
+    html {
+
+        height: 100%;
+        background-repeat: no-repeat;
+        background: url(assets/img/fondo3.jpg) no-repeat center center fixed;
+        background-size: 100% 100%;
+        opacity: 5;
+        filter: alpha(opacity=1);
+    }
     .table-fixed tbody {
         height: 230px;
         overflow: auto;
@@ -45,8 +55,8 @@
                 <th style="width: 250px" scope="col">id</th>
                 <th style="width: 110px" scope="col">Nombre</th>
                 <th style="width: 110px" scope="col">Apellido</th>
-                <th style="width: 110px" scope="col">Cedula</th>
-                <th style="width: 230px" scope="col">Correo Electronico</th>
+                <th style="width: 110px" scope="col">Cédula</th>
+                <th style="width: 230px" scope="col">Correo Electrónico</th>
                 <th style="width: 150px" scope="col">Perfil</th>
                 <th style="width: 110px" scope="col">Estado</th>
                 <th style="width: 160px" scope="col">Actualizar</th>
@@ -152,5 +162,5 @@
 
     });
 </script>
-<br>
+<br><br><br><br>
 {{> footer }}
