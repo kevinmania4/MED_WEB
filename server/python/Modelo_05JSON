@@ -1,0 +1,2950 @@
+[{
+  "_id": {
+    "$oid": "5f1de0e07f3e510017446cde"
+  },
+  "sintomas": [
+    "debilidad",
+    "diarrea",
+    "cansancio",
+    "fiebre",
+    "malestar",
+    "nauseas"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de16e7f3e510017446cdf"
+  },
+  "sintomas": [
+    "ansiedad",
+    "debilidad",
+    "cansancio",
+    "falta de apetito",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de1847f3e510017446ce0"
+  },
+  "sintomas": [
+    "vomito",
+    "temblor",
+    "sudoracion ",
+    "fiebre",
+    "dificultad respiratoria"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Bronquitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de1b77f3e510017446ce1"
+  },
+  "sintomas": [
+    "calambres",
+    "dolor abdominal",
+    "dolores articulares",
+    "hinchazon",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Urticaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de2367f3e510017446ce4"
+  },
+  "sintomas": [
+    "vision borrosa",
+    "sensibilidad a la luz",
+    "lagrimeo",
+    "dolor de cabeza"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de26b7f3e510017446ce5"
+  },
+  "sintomas": [
+    "movimientos involuntarios",
+    "fatiga",
+    "escalofrio",
+    "rigidez en el cuello",
+    "debilidad"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de2c57f3e510017446ce6"
+  },
+  "sintomas": [
+    "vomito",
+    "nauseas",
+    "malestar",
+    "gases",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de2ed7f3e510017446ce7"
+  },
+  "sintomas": [
+    "ansiedad",
+    "dificultad para hablar",
+    "dolor de garganta ",
+    "malestar",
+    "perdida de peso"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3137f3e510017446ce8"
+  },
+  "sintomas": [
+    "mucosidad",
+    "sudoracion ",
+    "temblor",
+    "fiebre",
+    "dolor de cabeza"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Bronquitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3147f3e510017446ce9"
+  },
+  "sintomas": [
+    "dificultad para hablar",
+    "dolor de garganta ",
+    "sequedad en la boca",
+    "tos",
+    "vision borrosa",
+    "fatiga"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3457f3e510017446cea"
+  },
+  "sintomas": [
+    "diarrea",
+    "dolor abdominal",
+    "hinchazon",
+    "gases",
+    "vomito"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3527f3e510017446ceb"
+  },
+  "sintomas": [
+    "calambres",
+    "debilidad",
+    "dificultad respiratoria",
+    "dolor de cabeza",
+    "escalofrio",
+    "fiebre",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3597f3e510017446cec"
+  },
+  "sintomas": [
+    "calambres",
+    "acidez de estomago",
+    "ansiedad",
+    "debilidad",
+    "diarrea",
+    "cansancio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3687f3e510017446ced"
+  },
+  "sintomas": [
+    "ardor esofagico",
+    "dificultad para hablar",
+    "dificultad respiratoria",
+    "dolor abdominal",
+    "dolor de cabeza"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3757f3e510017446cee"
+  },
+  "sintomas": [
+    "dolor muscular",
+    "dolor de garganta ",
+    "dolores articulares",
+    "enrojecimiento",
+    "entumecimiento",
+    "erupcion en la piel"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de37a7f3e510017446cef"
+  },
+  "sintomas": [
+    "sensibilidad a la luz",
+    "vision borrosa",
+    "sudoracion ",
+    "nauseas",
+    "lagrimeo"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3817f3e510017446cf0"
+  },
+  "sintomas": [
+    "escalofrio",
+    "falta de apetito",
+    "fatiga",
+    "fiebre",
+    "lagrimeo",
+    "hinchazon"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de38e7f3e510017446cf1"
+  },
+  "sintomas": [
+    "gases",
+    "malestar",
+    "movimientos involuntarios",
+    "movimientos descoordinados",
+    "mucosidad",
+    "nauseas"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de39c7f3e510017446cf2"
+  },
+  "sintomas": [
+    "perdida de peso",
+    "picazon",
+    "problemas al tragar",
+    "quemazon del esternon",
+    "regurgitacion",
+    "rigidez en el cuello"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Acidez de estomago",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3d07f3e510017446cf6"
+  },
+  "sintomas": [
+    "dolor de cabeza",
+    "dolor muscular",
+    "dolores articulares",
+    "enrojecimiento",
+    "entumecimiento",
+    "escalofrio",
+    "movimientos descoordinados"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3d87f3e510017446cf7"
+  },
+  "sintomas": [
+    "debilidad",
+    "tos",
+    "diarrea",
+    "temblor",
+    "sudoracion ",
+    "cansancio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de3f67f3e510017446cf8"
+  },
+  "sintomas": [
+    "ardor esofagico",
+    "sequedad en la boca",
+    "dificultad para hablar",
+    "sensibilidad a la luz",
+    "dificultad respiratoria",
+    "rigidez en el cuello"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de43a7f3e510017446cf9"
+  },
+  "sintomas": [
+    "enrojecimiento",
+    "entumecimiento",
+    "erupcion en la piel",
+    "escalofrio",
+    "fiebre",
+    "hinchazon",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de46b7f3e510017446cfa"
+  },
+  "sintomas": [
+    "ardor esofagico",
+    "dificultad respiratoria",
+    "dolor de cabeza",
+    "dolor muscular",
+    "entumecimiento"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de4c97f3e510017446cfd"
+  },
+  "sintomas": [
+    "dolor de cabeza",
+    "lagrimeo",
+    "sensibilidad a la luz",
+    "vision borrosa"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de4cc7f3e510017446cfe"
+  },
+  "sintomas": [
+    "perdida de peso",
+    "problemas al tragar",
+    "vomito",
+    "sequedad en la boca",
+    "dolores articulares"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de4eb7f3e510017446cff"
+  },
+  "sintomas": [
+    "vision borrosa",
+    "sensibilidad a la luz",
+    "movimientos descoordinados",
+    "cansancio",
+    "ansiedad"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Encefalitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de5167f3e510017446d01"
+  },
+  "sintomas": [
+    "malestar",
+    "gases",
+    "hinchazon",
+    "fiebre",
+    "nauseas",
+    "perdida de peso",
+    "sudoracion "
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de5327f3e510017446d02"
+  },
+  "sintomas": [
+    "sequedad en la boca",
+    "sensibilidad a la luz",
+    "sangre en las encias",
+    "rigidez en el cuello",
+    "regurgitacion"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Encefalitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de5367f3e510017446d03"
+  },
+  "sintomas": [
+    "escalofrio",
+    "fatiga",
+    "fiebre",
+    "hinchazon",
+    "gases",
+    "malestar",
+    "nauseas"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de5437f3e510017446d04"
+  },
+  "sintomas": [
+    "ardor esofagico",
+    "dolor abdominal",
+    "dolor de cabeza",
+    "dolor muscular",
+    "dolor de garganta ",
+    "dolores articulares"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Urticaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de54d7f3e510017446d05"
+  },
+  "sintomas": [
+    "ansiedad",
+    "acidez de estomago",
+    "diarrea",
+    "cansancio",
+    "falta de apetito",
+    "fatiga",
+    "gases"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de5507f3e510017446d06"
+  },
+  "sintomas": [
+    "enrojecimiento",
+    "escalofrio",
+    "fatiga",
+    "fiebre",
+    "lagrimeo",
+    "hinchazon",
+    "gases"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de5677f3e510017446d07"
+  },
+  "sintomas": [
+    "sangre en las encias",
+    "tos",
+    "fiebre",
+    "fatiga",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de5a97f3e510017446d08"
+  },
+  "sintomas": [
+    "vision borrosa",
+    "sudoracion ",
+    "sensibilidad a la luz",
+    "picazon",
+    "hinchazon",
+    "lagrimeo"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de5d57f3e510017446d09"
+  },
+  "sintomas": [
+    "cansancio",
+    "calambres",
+    "hinchazon",
+    "malestar",
+    "picazon",
+    "sudoracion "
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de5fe7f3e510017446d0a"
+  },
+  "sintomas": [
+    "vomito",
+    "acidez de estomago",
+    "diarrea",
+    "fatiga",
+    "fiebre",
+    "temblor"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de64f7f3e510017446d0b"
+  },
+  "sintomas": [
+    "sangre en las encias",
+    "temblor",
+    "dolor de garganta ",
+    "dolores articulares",
+    "escalofrio",
+    "fatiga"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de6907f3e510017446d0c"
+  },
+  "sintomas": [
+    "dolor de cabeza",
+    "dolor muscular",
+    "dolores articulares",
+    "entumecimiento",
+    "escalofrio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de6a47f3e510017446d0d"
+  },
+  "sintomas": [
+    "mucosidad",
+    "sudoracion ",
+    "debilidad",
+    "cansancio",
+    "dolores articulares",
+    "dolor de garganta "
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de6b17f3e510017446d0e"
+  },
+  "sintomas": [
+    "mucosidad",
+    "sudoracion ",
+    "debilidad",
+    "cansancio",
+    "dolores articulares",
+    "dolor de garganta ",
+    "escalofrio",
+    "falta de apetito",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de6ba7f3e510017446d0f"
+  },
+  "sintomas": [
+    "debilidad",
+    "cansancio",
+    "dolores articulares",
+    "dolor de garganta ",
+    "escalofrio",
+    "falta de apetito",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de6c07f3e510017446d10"
+  },
+  "sintomas": [
+    "mucosidad",
+    "picazon",
+    "debilidad",
+    "lagrimeo",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de7237f3e510017446d12"
+  },
+  "sintomas": [
+    "gases",
+    "hinchazon",
+    "diarrea",
+    "ansiedad",
+    "debilidad",
+    "acidez de estomago"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de73d7f3e510017446d13"
+  },
+  "sintomas": [
+    "tos",
+    "sudoracion ",
+    "fiebre",
+    "escalofrio",
+    "dolor de cabeza"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de7547f3e510017446d14"
+  },
+  "sintomas": [
+    "debilidad",
+    "diarrea",
+    "fiebre",
+    "fatiga",
+    "lagrimeo",
+    "hinchazon",
+    "gases",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de7677f3e510017446d16"
+  },
+  "sintomas": [
+    "dolor de garganta ",
+    "falta de apetito",
+    "dificultad respiratoria",
+    "perdida de peso"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de76a7f3e510017446d18"
+  },
+  "sintomas": [
+    "escalofrio",
+    "falta de apetito",
+    "fiebre",
+    "gases",
+    "nauseas",
+    "sudoracion ",
+    "temblor"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de7767f3e510017446d19"
+  },
+  "sintomas": [
+    "problemas al tragar",
+    "rigidez en el cuello",
+    "sangre en las encias",
+    "sequedad en la boca",
+    "tos"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de7797f3e510017446d1a"
+  },
+  "sintomas": [
+    "escalofrio",
+    "falta de apetito",
+    "debilidad",
+    "ansiedad",
+    "acidez de estomago"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de7b57f3e510017446d1c"
+  },
+  "sintomas": [
+    "calambres",
+    "dolor muscular",
+    "movimientos involuntarios",
+    "movimientos descoordinados"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de7b57f3e510017446d1d"
+  },
+  "sintomas": [
+    "falta de apetito",
+    "debilidad",
+    "dolor de cabeza",
+    "escalofrio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de7bc7f3e510017446d1e"
+  },
+  "sintomas": [
+    "tos",
+    "cansancio",
+    "enrojecimiento",
+    "fiebre",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Neumonia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de7c97f3e510017446d1f"
+  },
+  "sintomas": [
+    "vision borrosa",
+    "picazon",
+    "lagrimeo",
+    "cansancio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de7d97f3e510017446d20"
+  },
+  "sintomas": [
+    "vomito",
+    "nauseas",
+    "fiebre",
+    "dolor de cabeza",
+    "cansancio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de8267f3e510017446d21"
+  },
+  "sintomas": [
+    "dolor abdominal",
+    "escalofrio",
+    "fatiga",
+    "malestar",
+    "movimientos descoordinados",
+    "vision borrosa"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de82d7f3e510017446d22"
+  },
+  "sintomas": [
+    "vision borrosa",
+    "vomito",
+    "temblor",
+    "movimientos descoordinados",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de83b7f3e510017446d23"
+  },
+  "sintomas": [
+    "vision borrosa",
+    "sensibilidad a la luz",
+    "ansiedad",
+    "debilidad",
+    "dolor de cabeza"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de87f7f3e510017446d25"
+  },
+  "sintomas": [
+    "dolor muscular",
+    "falta de apetito",
+    "hinchazon",
+    "malestar",
+    "debilidad"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de8817f3e510017446d26"
+  },
+  "sintomas": [
+    "sequedad en la boca",
+    "rigidez en el cuello",
+    "problemas al tragar",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de89c7f3e510017446d27"
+  },
+  "sintomas": [
+    "debilidad",
+    "acidez de estomago",
+    "dolores articulares",
+    "escalofrio",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de8a57f3e510017446d28"
+  },
+  "sintomas": [
+    "vision borrosa",
+    "temblor",
+    "fatiga",
+    "escalofrio",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de8a87f3e510017446d29"
+  },
+  "sintomas": [
+    "dolores articulares",
+    "temblor",
+    "movimientos descoordinados"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de8b37f3e510017446d2a"
+  },
+  "sintomas": [
+    "temblor",
+    "fatiga",
+    "escalofrio",
+    "fiebre",
+    "calambres"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de8b87f3e510017446d2b"
+  },
+  "sintomas": [
+    "tos",
+    "dificultad respiratoria",
+    "ardor esofagico"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Bronquitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de8cd7f3e510017446d2c"
+  },
+  "sintomas": [
+    "perdida de peso",
+    "nauseas",
+    "malestar",
+    "fiebre",
+    "fatiga",
+    "falta de apetito",
+    "escalofrio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de8e17f3e510017446d2d"
+  },
+  "sintomas": [
+    "nauseas",
+    "malestar",
+    "fiebre",
+    "fatiga",
+    "escalofrio",
+    "diarrea",
+    "cansancio",
+    "debilidad"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de94f7f3e510017446d2e"
+  },
+  "sintomas": [
+    "dolor de cabeza",
+    "dolor muscular",
+    "dolores articulares",
+    "fiebre",
+    "temblor"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de9987f3e510017446d2f"
+  },
+  "sintomas": [
+    "ansiedad",
+    "dolor de cabeza",
+    "fiebre",
+    "hinchazon",
+    "enrojecimiento",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de9f47f3e510017446d30"
+  },
+  "sintomas": [
+    "malestar",
+    "hinchazon",
+    "nauseas",
+    "picazon",
+    "sudoracion "
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1de9fd7f3e510017446d31"
+  },
+  "sintomas": [
+    "dolor de garganta ",
+    "enrojecimiento",
+    "entumecimiento",
+    "escalofrio",
+    "fatiga"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dea187f3e510017446d32"
+  },
+  "sintomas": [
+    "dolores articulares",
+    "escalofrio",
+    "fiebre",
+    "temblor"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dea427f3e510017446d34"
+  },
+  "sintomas": [
+    "diarrea",
+    "calambres",
+    "cansancio",
+    "ansiedad",
+    "dificultad respiratoria"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dea677f3e510017446d35"
+  },
+  "sintomas": [
+    "dolor de cabeza",
+    "escalofrio",
+    "fatiga",
+    "fiebre",
+    "quemazon del esternon"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dea767f3e510017446d36"
+  },
+  "sintomas": [
+    "rigidez en el cuello",
+    "sensibilidad a la luz",
+    "sudoracion ",
+    "entumecimiento",
+    "erupcion en la piel"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Encefalitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deac67f3e510017446d39"
+  },
+  "sintomas": [
+    "dificultad para hablar",
+    "dolor de cabeza",
+    "dolor de garganta ",
+    "fiebre",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Neumonia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deade7f3e510017446d3a"
+  },
+  "sintomas": [
+    "rigidez en el cuello",
+    "sensibilidad a la luz",
+    "calambres",
+    "debilidad",
+    "diarrea"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Encefalitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deaed7f3e510017446d3b"
+  },
+  "sintomas": [
+    "debilidad",
+    "diarrea",
+    "ansiedad",
+    "calambres",
+    "fiebre",
+    "fatiga",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Urticaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deafe7f3e510017446d3c"
+  },
+  "sintomas": [
+    "malestar",
+    "fiebre",
+    "fatiga",
+    "falta de apetito",
+    "nauseas",
+    "perdida de peso",
+    "calambres"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deb057f3e510017446d3d"
+  },
+  "sintomas": [
+    "cansancio",
+    "ardor esofagico",
+    "problemas al tragar",
+    "sequedad en la boca",
+    "tos"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deb197f3e510017446d3e"
+  },
+  "sintomas": [
+    "acidez de estomago",
+    "gases",
+    "malestar",
+    "hinchazon",
+    "picazon",
+    "vomito"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deb287f3e510017446d3f"
+  },
+  "sintomas": [
+    "vomito",
+    "tos",
+    "temblor",
+    "sudoracion ",
+    "debilidad",
+    "diarrea",
+    "cansancio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1debf87f3e510017446d41"
+  },
+  "sintomas": [
+    "ardor esofagico",
+    "dolor de cabeza",
+    "escalofrio",
+    "fiebre",
+    "fatiga"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dec1e7f3e510017446d42"
+  },
+  "sintomas": [
+    "vision borrosa",
+    "sudoracion ",
+    "sensibilidad a la luz",
+    "nauseas"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dec377f3e510017446d43"
+  },
+  "sintomas": [
+    "dificultad para hablar",
+    "dolor de garganta ",
+    "entumecimiento",
+    "fiebre",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dec447f3e510017446d44"
+  },
+  "sintomas": [
+    "dolor abdominal",
+    "dolor muscular",
+    "falta de apetito",
+    "malestar",
+    "nauseas"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dec5a7f3e510017446d45"
+  },
+  "sintomas": [
+    "cansancio",
+    "diarrea",
+    "dolor abdominal",
+    "ardor esofagico",
+    "vomito"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dec637f3e510017446d46"
+  },
+  "sintomas": [
+    "gases",
+    "sudoracion ",
+    "vomito",
+    "acidez de estomago",
+    "cansancio",
+    "dolor abdominal"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dec6a7f3e510017446d47"
+  },
+  "sintomas": [
+    "nauseas",
+    "escalofrio",
+    "dolor muscular",
+    "dolores articulares",
+    "fatiga",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dec837f3e510017446d48"
+  },
+  "sintomas": [
+    "debilidad",
+    "diarrea",
+    "nauseas",
+    "picazon",
+    "quemazon del esternon"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dec9f7f3e510017446d49"
+  },
+  "sintomas": [
+    "sensibilidad a la luz",
+    "picazon",
+    "malestar",
+    "lagrimeo",
+    "hinchazon",
+    "fatiga",
+    "escalofrio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1decb07f3e510017446d4a"
+  },
+  "sintomas": [
+    "debilidad",
+    "diarrea",
+    "dificultad para hablar",
+    "gases",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dece37f3e510017446d4b"
+  },
+  "sintomas": [
+    "dolor de cabeza",
+    "fiebre",
+    "fatiga",
+    "cansancio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Neumonia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1decf97f3e510017446d4c"
+  },
+  "sintomas": [
+    "dificultad para hablar",
+    "dificultad respiratoria",
+    "ardor esofagico",
+    "tos"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Bronquitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1ded0b7f3e510017446d4d"
+  },
+  "sintomas": [
+    "calambres",
+    "dolor muscular",
+    "entumecimiento",
+    "sudoracion "
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1ded1c7f3e510017446d4e"
+  },
+  "sintomas": [
+    "lagrimeo",
+    "fiebre",
+    "fatiga",
+    "vision borrosa",
+    "sensibilidad a la luz"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1ded257f3e510017446d4f"
+  },
+  "sintomas": [
+    "quemazon del esternon",
+    "regurgitacion",
+    "temblor",
+    "cansancio",
+    "fatiga",
+    "falta de apetito"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Acidez de estomago",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1ded397f3e510017446d50"
+  },
+  "sintomas": [
+    "dolor de garganta ",
+    "dolor muscular",
+    "fatiga",
+    "fiebre",
+    "picazon",
+    "perdida de peso"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1ded3e7f3e510017446d51"
+  },
+  "sintomas": [
+    "ansiedad",
+    "rigidez en el cuello",
+    "regurgitacion",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Acidez de estomago",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1ded497f3e510017446d53"
+  },
+  "sintomas": [
+    "sudoracion ",
+    "temblor",
+    "tos",
+    "cansancio",
+    "diarrea"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1ded6a7f3e510017446d55"
+  },
+  "sintomas": [
+    "sudoracion ",
+    "ansiedad",
+    "dificultad para hablar",
+    "dolor abdominal"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1ded6c7f3e510017446d56"
+  },
+  "sintomas": [
+    "rigidez en el cuello",
+    "regurgitacion",
+    "malestar",
+    "escalofrio",
+    "dolor de cabeza"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1ded717f3e510017446d57"
+  },
+  "sintomas": [
+    "sangre en las encias",
+    "erupcion en la piel",
+    "picazon",
+    "debilidad",
+    "ansiedad"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1ded8b7f3e510017446d58"
+  },
+  "sintomas": [
+    "sangre en las encias",
+    "sequedad en la boca",
+    "sudoracion ",
+    "temblor",
+    "tos",
+    "lagrimeo"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dedbf7f3e510017446d59"
+  },
+  "sintomas": [
+    "erupcion en la piel",
+    "picazon",
+    "hinchazon",
+    "malestar",
+    "fatiga",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dedc27f3e510017446d5a"
+  },
+  "sintomas": [
+    "falta de apetito",
+    "dolor de cabeza",
+    "dolor muscular",
+    "dolores articulares",
+    "fatiga"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Urticaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deddb7f3e510017446d5b"
+  },
+  "sintomas": [
+    "diarrea",
+    "dificultad para hablar",
+    "ardor esofagico",
+    "fatiga",
+    "hinchazon",
+    "gases",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Acidez de estomago",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dedde7f3e510017446d5c"
+  },
+  "sintomas": [
+    "gases",
+    "hinchazon",
+    "malestar",
+    "acidez de estomago"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dee1b7f3e510017446d5e"
+  },
+  "sintomas": [
+    "gases",
+    "hinchazon",
+    "debilidad",
+    "entumecimiento",
+    "falta de apetito",
+    "fatiga",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dee217f3e510017446d5f"
+  },
+  "sintomas": [
+    "falta de apetito",
+    "malestar",
+    "dolor de cabeza",
+    "dolor abdominal",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Urticaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dee217f3e510017446d60"
+  },
+  "sintomas": [
+    "gases",
+    "hinchazon",
+    "falta de apetito",
+    "fatiga",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1dee4b7f3e510017446d61"
+  },
+  "sintomas": [
+    "diarrea",
+    "dolor abdominal",
+    "dolores articulares",
+    "dolor de cabeza",
+    "fiebre",
+    "fatiga",
+    "falta de apetito"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Urticaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deecb7f3e510017446d63"
+  },
+  "sintomas": [
+    "entumecimiento",
+    "dolores articulares",
+    "calambres",
+    "hinchazon",
+    "movimientos involuntarios"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deed87f3e510017446d64"
+  },
+  "sintomas": [
+    "vomito",
+    "vision borrosa",
+    "temblor",
+    "malestar",
+    "escalofrio",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1deef37f3e510017446d65"
+  },
+  "sintomas": [
+    "vomito",
+    "rigidez en el cuello",
+    "sensibilidad a la luz",
+    "movimientos descoordinados",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Encefalitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1def2e7f3e510017446d66"
+  },
+  "sintomas": [
+    "nauseas",
+    "vomito",
+    "acidez de estomago",
+    "falta de apetito",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1def6b7f3e510017446d69"
+  },
+  "sintomas": [
+    "dolor abdominal",
+    "vomito",
+    "nauseas",
+    "diarrea",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1def9c7f3e510017446d6a"
+  },
+  "sintomas": [
+    "cansancio",
+    "nauseas",
+    "fiebre",
+    "falta de apetito",
+    "diarrea"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1defce7f3e510017446d6b"
+  },
+  "sintomas": [
+    "calambres",
+    "temblor",
+    "picazon",
+    "malestar",
+    "hinchazon"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1defd47f3e510017446d6c"
+  },
+  "sintomas": [
+    "mucosidad",
+    "tos",
+    "dificultad respiratoria",
+    "fiebre",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Bronquitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df0067f3e510017446d6d"
+  },
+  "sintomas": [
+    "malestar",
+    "fiebre",
+    "tos",
+    "mucosidad",
+    "dificultad respiratoria"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Bronquitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df03a7f3e510017446d6e"
+  },
+  "sintomas": [
+    "entumecimiento",
+    "hinchazon",
+    "movimientos involuntarios",
+    "temblor",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df05e7f3e510017446d6f"
+  },
+  "sintomas": [
+    "temblor",
+    "malestar",
+    "hinchazon",
+    "entumecimiento",
+    "movimientos involuntarios",
+    "perdida de peso"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df0a47f3e510017446d72"
+  },
+  "sintomas": [
+    "dificultad para hablar",
+    "dolor abdominal",
+    "enrojecimiento",
+    "escalofrio",
+    "malestar",
+    "sudoracion "
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Urticaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df0b27f3e510017446d73"
+  },
+  "sintomas": [
+    "dolor abdominal",
+    "acidez de estomago",
+    "diarrea",
+    "ansiedad"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df0be7f3e510017446d74"
+  },
+  "sintomas": [
+    "acidez de estomago",
+    "dolor abdominal",
+    "malestar",
+    "gases"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df0ca7f3e510017446d75"
+  },
+  "sintomas": [
+    "dificultad para hablar",
+    "ardor esofagico",
+    "vomito",
+    "regurgitacion"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Acidez de estomago",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df0cc7f3e510017446d76"
+  },
+  "sintomas": [
+    "temblor",
+    "ansiedad",
+    "hinchazon",
+    "entumecimiento",
+    "fatiga",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df1017f3e510017446d77"
+  },
+  "sintomas": [
+    "vision borrosa",
+    "lagrimeo",
+    "dolor de cabeza"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df1437f3e510017446d79"
+  },
+  "sintomas": [
+    "acidez de estomago",
+    "ardor esofagico",
+    "nauseas",
+    "perdida de peso"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df1777f3e510017446d7b"
+  },
+  "sintomas": [
+    "gases",
+    "hinchazon",
+    "dolor abdominal",
+    "vomito"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df1867f3e510017446d7c"
+  },
+  "sintomas": [
+    "movimientos descoordinados",
+    "sensibilidad a la luz",
+    "fiebre",
+    "dolores articulares"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Encefalitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df18f7f3e510017446d7d"
+  },
+  "sintomas": [
+    "calambres",
+    "dolor muscular",
+    "fatiga",
+    "movimientos involuntarios",
+    "movimientos involuntarios"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df1967f3e510017446d7e"
+  },
+  "sintomas": [
+    "movimientos descoordinados",
+    "sensibilidad a la luz",
+    "fiebre",
+    "dolores articulares",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Urticaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df19a7f3e510017446d7f"
+  },
+  "sintomas": [
+    "sudoracion ",
+    "regurgitacion",
+    "quemazon del esternon",
+    "tos"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Acidez de estomago",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df1aa7f3e510017446d80"
+  },
+  "sintomas": [
+    "movimientos descoordinados",
+    "sensibilidad a la luz",
+    "fiebre",
+    "dolores articulares",
+    "nauseas",
+    "dolor de cabeza"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df1b07f3e510017446d81"
+  },
+  "sintomas": [
+    "hinchazon",
+    "dolores articulares",
+    "erupcion en la piel",
+    "debilidad"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df1d57f3e510017446d83"
+  },
+  "sintomas": [
+    "hinchazon",
+    "calambres",
+    "movimientos involuntarios",
+    "ansiedad",
+    "cansancio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df2057f3e510017446d84"
+  },
+  "sintomas": [
+    "ardor esofagico",
+    "cansancio",
+    "dificultad para hablar",
+    "dolor de garganta "
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Acidez de estomago",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df20a7f3e510017446d85"
+  },
+  "sintomas": [
+    "dificultad para hablar",
+    "vomito",
+    "rigidez en el cuello",
+    "sensibilidad a la luz",
+    "movimientos descoordinados"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Encefalitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df20c7f3e510017446d86"
+  },
+  "sintomas": [
+    "ardor esofagico",
+    "cansancio",
+    "dificultad para hablar",
+    "dolor de garganta ",
+    "temblor",
+    "tos"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df2317f3e510017446d87"
+  },
+  "sintomas": [
+    "sensibilidad a la luz",
+    "movimientos descoordinados",
+    "vomito",
+    "temblor",
+    "sudoracion "
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Encefalitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df2767f3e510017446d88"
+  },
+  "sintomas": [
+    "hinchazon",
+    "movimientos descoordinados",
+    "picazon",
+    "sudoracion ",
+    "vision borrosa",
+    "sangre en las encias"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Ojo seco",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df2847f3e510017446d8a"
+  },
+  "sintomas": [
+    "sensibilidad a la luz",
+    "sudoracion ",
+    "dolor de cabeza",
+    "cansancio",
+    "debilidad"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df2957f3e510017446d8d"
+  },
+  "sintomas": [
+    "rigidez en el cuello",
+    "sensibilidad a la luz",
+    "vomito",
+    "fatiga",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Encefalitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df2a47f3e510017446d8e"
+  },
+  "sintomas": [
+    "nauseas",
+    "mucosidad",
+    "rigidez en el cuello",
+    "sequedad en la boca"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Bronquitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df2b77f3e510017446d8f"
+  },
+  "sintomas": [
+    "calambres",
+    "dolor muscular",
+    "hinchazon",
+    "movimientos descoordinados",
+    "movimientos involuntarios"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Fibromialgia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df2e97f3e510017446d91"
+  },
+  "sintomas": [
+    "tos",
+    "fiebre",
+    "malestar",
+    "dolor muscular",
+    "cansancio",
+    "nauseas"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Neumonia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df2fb7f3e510017446d93"
+  },
+  "sintomas": [
+    "ansiedad",
+    "debilidad",
+    "cansancio",
+    "escalofrio",
+    "fatiga",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df2ff7f3e510017446d94"
+  },
+  "sintomas": [
+    "ansiedad",
+    "escalofrio",
+    "fatiga",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df3127f3e510017446d95"
+  },
+  "sintomas": [
+    "hinchazon",
+    "gases",
+    "malestar",
+    "escalofrio",
+    "dificultad respiratoria"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df3147f3e510017446d96"
+  },
+  "sintomas": [
+    "dolor de cabeza",
+    "cansancio",
+    "dolor muscular",
+    "fatiga",
+    "fiebre"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Neumonia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df3617f3e510017446d97"
+  },
+  "sintomas": [
+    "dolor muscular",
+    "cansancio",
+    "tos",
+    "sudoracion ",
+    "temblor"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Neumonia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df37b7f3e510017446d98"
+  },
+  "sintomas": [
+    "dolor muscular",
+    "enrojecimiento",
+    "erupcion en la piel",
+    "picazon",
+    "nauseas",
+    "perdida de peso"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df3887f3e510017446d99"
+  },
+  "sintomas": [
+    "ansiedad",
+    "debilidad",
+    "dolor de cabeza",
+    "escalofrio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Malaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df3957f3e510017446d9a"
+  },
+  "sintomas": [
+    "sudoracion ",
+    "cansancio",
+    "calambres",
+    "dificultad para hablar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Leucemia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df3967f3e510017446d9b"
+  },
+  "sintomas": [
+    "dolor muscular",
+    "enrojecimiento",
+    "erupcion en la piel",
+    "picazon",
+    "nauseas",
+    "perdida de peso",
+    "sensibilidad a la luz"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Dengue",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df3ae7f3e510017446d9d"
+  },
+  "sintomas": [
+    "dolor abdominal",
+    "vomito",
+    "nauseas",
+    "diarrea",
+    "cansancio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df3de7f3e510017446da0"
+  },
+  "sintomas": [
+    "problemas al tragar",
+    "malestar",
+    "dolor de garganta ",
+    "acidez de estomago"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df3df7f3e510017446da1"
+  },
+  "sintomas": [
+    "diarrea",
+    "cansancio",
+    "debilidad",
+    "dolor de cabeza",
+    "fiebre",
+    "dolor abdominal"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df3ea7f3e510017446da2"
+  },
+  "sintomas": [
+    "sensibilidad a la luz",
+    "tos",
+    "temblor",
+    "sudoracion "
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Bronquitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df4047f3e510017446da3"
+  },
+  "sintomas": [
+    "cansancio",
+    "diarrea",
+    "debilidad",
+    "ansiedad"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Hepatitis A",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df4187f3e510017446da4"
+  },
+  "sintomas": [
+    "vomito",
+    "nauseas",
+    "diarrea",
+    "calambres",
+    "fiebre",
+    "dolor abdominal"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df4227f3e510017446da5"
+  },
+  "sintomas": [
+    "calambres",
+    "debilidad",
+    "dificultad para hablar",
+    "dificultad respiratoria",
+    "entumecimiento",
+    "fatiga"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df4287f3e510017446da6"
+  },
+  "sintomas": [
+    "calambres",
+    "debilidad",
+    "dificultad para hablar",
+    "dificultad respiratoria",
+    "entumecimiento",
+    "fatiga",
+    "fiebre",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "El botulismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df42b7f3e510017446da7"
+  },
+  "sintomas": [
+    "falta de apetito",
+    "gases",
+    "malestar",
+    "nauseas"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df4347f3e510017446da8"
+  },
+  "sintomas": [
+    "dificultad para hablar",
+    "dificultad respiratoria",
+    "entumecimiento",
+    "fiebre",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Rabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1df4447f3e510017446da9"
+  },
+  "sintomas": [
+    "quemazon del esternon",
+    "dificultad respiratoria",
+    "ardor esofagico"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Acidez de estomago",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e23a18c94f20017df63c2"
+  },
+  "sintomas": [
+    "ardor esofagico",
+    "quemazon del esternon",
+    "gases",
+    "nauseas",
+    "picazon"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Acidez de estomago",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e23c58c94f20017df63c3"
+  },
+  "sintomas": [
+    "gases",
+    "quemazon del esternon",
+    "regurgitacion",
+    "sudoracion ",
+    "nauseas"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Acidez de estomago",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e24088c94f20017df63c4"
+  },
+  "sintomas": [
+    "tos",
+    "mucosidad",
+    "fiebre",
+    "gases",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Bronquitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e24368c94f20017df63c5"
+  },
+  "sintomas": [
+    "fiebre",
+    "dificultad respiratoria",
+    "mucosidad",
+    "falta de apetito",
+    "malestar"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Bronquitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e26828c94f20017df63c6"
+  },
+  "sintomas": [
+    "vomito",
+    "movimientos descoordinados",
+    "movimientos involuntarios",
+    "sensibilidad a la luz",
+    "rigidez en el cuello"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Encefalitis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e26d48c94f20017df63c7"
+  },
+  "sintomas": [
+    "fiebre",
+    "malestar",
+    "tos",
+    "dolor de cabeza",
+    "dolor muscular",
+    "cansancio"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Neumonia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e26f28c94f20017df63c8"
+  },
+  "sintomas": [
+    "cansancio",
+    "dolor de cabeza",
+    "fiebre",
+    "malestar",
+    "hinchazon"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Neumonia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e271e8c94f20017df63c9"
+  },
+  "sintomas": [
+    "dolor muscular",
+    "cansancio",
+    "dolor de cabeza",
+    "tos",
+    "diarrea"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Neumonia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e27428c94f20017df63ca"
+  },
+  "sintomas": [
+    "fiebre",
+    "fatiga",
+    "malestar",
+    "dolor muscular",
+    "cansancio",
+    "tos"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Neumonia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e27838c94f20017df63cb"
+  },
+  "sintomas": [
+    "diarrea",
+    "fiebre",
+    "falta de apetito",
+    "malestar",
+    "dolor de cabeza",
+    "dolores articulares"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Urticaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e27bc8c94f20017df63cc"
+  },
+  "sintomas": [
+    "dolores articulares",
+    "dolor de cabeza",
+    "falta de apetito",
+    "malestar",
+    "dolor abdominal",
+    "fiebre",
+    "hinchazon"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Urticaria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e2d5c8c94f20017df63d1"
+  },
+  "sintomas": [
+    "vomito",
+    "nauseas",
+    "diarrea",
+    "fiebre",
+    "dolor de cabeza"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f1e2da38c94f20017df63d2"
+  },
+  "sintomas": [
+    "dolor abdominal",
+    "dolor de cabeza",
+    "diarrea",
+    "fiebre",
+    "vomito",
+    "temblor"
+  ],
+  "usuario": {
+    "$oid": "5f1c57eb1640236ec2eb9765"
+  },
+  "enfermedad": "Gastroenteritis",
+  "__v": 0
+}]
