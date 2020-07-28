@@ -94,7 +94,7 @@ def funcion_TF_IDF(documentosV):
 
 
 # ----------------------------------------------------------------------------------------------------------------------------------
-with open('Modelo_05JSON') as json_data:
+with open('Modelo05JSON') as json_data:
     content = json_data.read()
     data = json.loads(content)
 
