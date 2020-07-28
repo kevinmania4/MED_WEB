@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 
+app.use(require("./Python_Control"));
 app.use(require("./aniadirUsuario"));
 app.use(require("./aniadirEnfermedad"));
 app.use(require("./insertarNuevoSintoma"));

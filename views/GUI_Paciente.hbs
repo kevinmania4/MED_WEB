@@ -43,6 +43,10 @@
 <form id="respuesta" style="position: absolute; top: 550px; left:550px;">
     <button type="submit" class="btn btn-primary">Consultar</button>
 </form>
+<div id="cont-python" style="position: absolute; top: 600px; left:550px;">
+    <h>PYTHON</h>
+    <input id="submitbutton" type="submit" value="Test Send Data">
+</div>
 
 <h1 style="position: absolute; top: 250px; left:850px;">Información recomendada</h1>
 <div style="position: absolute; top: 325px; left:850px;">
@@ -61,7 +65,7 @@
 <script>
     $(() => {
         var id = [];
-        var desSintoma=[];
+        var desSintoma = [];
         $.ajax({
             url: '/respuestaSintoma',
             contentType: 'application/json',
@@ -130,10 +134,59 @@
                 }
             });
         });
+/*
+        $.ajax({
+            url: 'http://127.0.0.1:5000/api/v1.0/tareas',
+            method: 'POST',
+            //contentType: 'application/json',
 
-
+            success: (respuesta) => {
+                console.log("AJAX", respuesta);
+                console.log("AJAX", respuesta.respondo);
+            }
+        });
+*/
     });
+/*
+    function runPyScript(input) {
+        var jqXHR = $.ajax({
+            type: "POST",
+            url: "http://127.0.0.1:5000/api/v1.0/tareas",
+            //async: false,
+            //data: { mydata: input },
+            success: (respuesta) => {
+                console.log("R__-----_>", respuesta);
+                console.log("R__-----_>", respuesta.respondo);
+            }
+        });
 
+        return jqXHR.responseText;
+    }
+    datatosend = 'this is my matrix';
+    result = runPyScript(datatosend);
+    console.log('Got back ' + result);
+    console.log('Got back ' + result.respondo);
+*/
 </script>
+ <script type="text/javascript"> 
+
+    function runPyScript(input){ 
+     var jqXHR = $.ajax({ 
+      type: "POST", 
+      url: "http://127.0.0.1:5000/login", 
+      async: false, 
+      data: { mydata: input } 
+     }); 
+
+     return jqXHR.responseText; 
+    } 
+
+    $('#submitbutton').click(function(){ 
+     datatosend = 'this is my matrix'; 
+     result = runPyScript(datatosend); 
+     console.log('Got back ' + result); 
+    }); 
+
+</script> 
 
 {{> footer }}

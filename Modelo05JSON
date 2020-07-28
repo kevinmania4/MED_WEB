@@ -11,7 +11,7 @@
     "nauseas"
   ],
   "usuario": {
-    "$oid": "5f1c57eb1640236ec2eb9765"
+    "$oid": "5f1c57eb1640236ec2eb97656"
   },
   "enfermedad": "Hepatitis A",
   "__v": 0
