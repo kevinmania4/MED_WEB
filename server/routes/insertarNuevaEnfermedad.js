@@ -6,9 +6,10 @@ const { verificaToken, ver_doc } = require("../middlewares/autenticacion");
 const app = express();
 
 app.get('/enfermedad', (req, res) => {
-    res.render('enfermedad');
+    res.render('GUI_Enfermedad');
 });
 
+//**************Buscar Enfermedad***************/
 app.get("/enfermedades", (req, res) => {
     Enfermedad.find({}).exec((err, enfermedadesDB) => {
         if (err) {
@@ -21,6 +22,8 @@ app.get("/enfermedades", (req, res) => {
     });
     //res.send('SI esttaaaaa')
 });
+
+//**************Guardar Enfermedad***************/
 app.post("/enfermedad", (req, res) => {
     let body = req.body;
     ///console.log(req.usuario._id);

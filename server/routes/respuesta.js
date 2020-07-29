@@ -17,6 +17,7 @@ app.get('/paciente', (req, res) => {
     res.render('GUI_Paciente');
 });
 
+//************************buscar Sintomas****************************/
 app.get('/respuestaSintoma', (req, res) => {
     Sintoma.find({})
         .exec((err, sintomas) => {
@@ -29,6 +30,8 @@ app.get('/respuestaSintoma', (req, res) => {
             res.send({ sintomas: sintomas });
         });
 });
+
+//************************Buscar Enfermedad y Tratamiento****************************/
 app.post('/responder', (req, res) => {
     let body = req.body
     let sintomas = body.sintomas;
@@ -100,6 +103,8 @@ app.post('/responder', (req, res) => {
     });
 });
 
+
+//************************Guardar Reporte****************************/
 app.post('/GuardaReporte', (req, res) => {
     let body = req.body;
     console.log('EN REGISTRO --_--***');

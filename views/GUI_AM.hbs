@@ -34,18 +34,18 @@
 </style>
 <br><br><br><br><br><br><br>
 <center>
-<h2 ><b>MACHINE LEARNING</b></h2>
+    <h2><b>MACHINE LEARNIG</b></h2>
 </center>
 <b>
-<div style="position: absolute; top: 200px; left:10px;" id='info_datos'></div>
+    <div style="position: absolute; top: 200px; left:10px;" id='info_datos'></div>
 </b>
 
 
 <br><br><br>
 
-<div >
-    <table id='tablas' class="table table-hover table-fixed"  border="0"
-    style="width:45%" "position: absolute; top: 300px; left:20px;">
+<div>
+    <table id='tablas' class="table table-hover table-fixed" border="0"
+        style="width:45%" "position: absolute; top: 300px; left:20px;">
         <thead>
             <tr>
                 <th style="width: 170px" scope="col">Predictorios</th>
@@ -59,16 +59,16 @@
 </div>
 
 
- 
+
 <div id='cont-01'>
     <table id="usuarios" class="table table-hover table-fixed" border="0"
-        style= "position: absolute; top: 265px; left:450px;">
+        style="position: absolute; top: 265px; left:450px;">
         <thead>
             <tr>
                 <th style="width: 180px" scope="col">Enfermedad</th>
-                 <th style="width: 180px" scope="col">Precision</th>
-                  <th style="width: 180px" scope="col">Recall</th>
-                   <th style="width: 150px" scope="col">f_mesure</th>
+                <th style="width: 180px" scope="col">Precision</th>
+                <th style="width: 180px" scope="col">Recall</th>
+                <th style="width: 150px" scope="col">f_mesure</th>
             </tr>
         </thead>
         <tbody id='contenedor3'>
@@ -113,9 +113,9 @@
  --}}
 
 <b>
-<div id='cont_02'  style= "position: absolute; top: 550px; left:800px;">
-</div>
- </b>
+    <div id='cont_02' style="position: absolute; top: 550px; left:800px;">
+    </div>
+</b>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -158,27 +158,11 @@
                     $('#contenedor3').append('<tr><td  style="width: 180px" scope="col">' + dta.enfermedadades[i] + '</td><td  style="width: 180px" scope="col">' + dta.precision[i] + '</td><td  style="width: 180px" scope="col">' + dta.recall[i] + '</td><td  style="width: 180px" scope="col">' + dta.f_mesure[i] + '</td></tr>')
                 }
 
-/*
-                dta.enfermedadades.forEach((real) => {
-                    $('#contenedor3').append('<tr><td style="width: 180px" scope="col">' + real + '</td></tr>')
-                });
-                dta.precision.forEach((real) => {
-                    $('#contenedor4').append('<tr><td style="width: 150px" scope="col">' + real + '</td></tr>')
-                });
-                dta.recall.forEach((real) => {
-                    $('#contenedor5').append('<tr><td>' + real + '</td></tr>')
-                });
-                dta.f_mesure.forEach((real) => {
-                    $('#contenedor6').append('<tr><td>' + real + '</td></tr>')
-                });
-                */
-                //------------------------------------
-                $('#cont_02').append('<p>Accuracy: ' + dta.accuracy + ' </p>');
-                $('#cont_02').append('<p>Total de errores: ' + dta.T_erroes + ' </p>');
-
             }
         });
     });
 </script>
 <br><br><br><br><br><br>
+
+</font>
 {{> footer }}

@@ -4,8 +4,10 @@ const _ = require("underscore");
 const app = express();
 
 app.get("/usuarios", (req, res) => {
-    res.render("GUIusuarios");
+    res.render("GUI_Usuarios");
 });
+
+//**************Buscar Usuarios*********************/
 app.post("/verusuarios", (req, res) => {
     Verusuarios.find({}).exec((err, usuariosDB) => {
         if (err) {
@@ -17,6 +19,8 @@ app.post("/verusuarios", (req, res) => {
         res.send({ usuarios: usuariosDB });
     });
 });
+
+
 app.post("/elegirus", (req, res) => {
     let body = req.body;
     Verusuarios.find({ perfil: body.opcion }).exec((err, usuariosDB) => {
@@ -30,6 +34,7 @@ app.post("/elegirus", (req, res) => {
     });
 });
 
+//*************Actualizar Usuario**********************/
 app.put("/elegirus/:id", (req, res) => {
     let id = req.params.id;
     let body = _.pick(req.body, ["estado"]);

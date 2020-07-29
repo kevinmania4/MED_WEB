@@ -20,48 +20,25 @@
 </div>
 
 <section style="position: absolute; top: 100px; left:470px;">
-    {{!-- <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel"> --}}
-
-    {{!-- <ol class="carousel-indicators" id="hero-carousel-indicators"></ol> --}}
-
-    {{!-- <div class="carousel-inner" role="listbox"> --}}
-
     <div class="carousel-item active">
         <center>
-            <!--
-                    <textarea id="des_tratamiento" rows="10" cols="50" placeholder="Ingrese tratamiento" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></textarea>
-                    <div class="validate"></div>
-                    -->
             <br> <br>
-            {{!-- <div class="text-center"><input type="submit" value="Aceptar"></div> --}}
             <form class="form-signin" id="tratamiento">
                 <textarea id="des_tratamiento" rows="10" cols="50" placeholder="Ingrese tratamiento"
                     data-rule="minlen:4" data-msg="Please enter at least 4 chars"></textarea>
                 <div class="validate"></div>
-
                 <br>
                 <button class="btn btn-lg btn-primary btn-lg" type="submit">Guardar</button>
             </form>
         </center>
     </div>
-
-
-
-    {{!-- </div> --}}
     <input visibility: hidden type="button" id="IDE" value="{{ idEnfermedad }}">
-    {{!-- </div> --}}
 </section>
 
-
-
-
-
 <div class="w3-container">
-
     <button onclick="document.getElementById('id01').style.display='block'"
         style="position: absolute; top: 150px; left:1180px; border:none; background:none;"> <img
             src="assets/img/ayuda.png" alt="Gandalf" /></button>
-
     <div id="id01" class="w3-modal" style="position: absolute; top: 120px; left:0px;">
         <div class="w3-modal-content">
             <header class="w3-container w3-teal">
@@ -76,9 +53,6 @@
                 <p>2) Ingresar tratamiento. </p>
                 <p>5) Guardar.</p>
             </div>
-            {{!-- <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
-      </footer> --}}
         </div>
     </div>
 </div>
@@ -91,6 +65,7 @@
 
 <script>
     $(function () {
+        //****************Insertar Tratamiento**********************/
         $('#tratamiento').on('submit', function (event) {
             event.preventDefault();
             var idee = $('#IDE');

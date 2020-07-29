@@ -5,12 +5,12 @@ const Relacion = require('../models/relacion');
 const app = express();
 
 app.get('/sintoma', (req, res) => {
-    let idEnfermedad = req.query.idE;
+    //let idEnfermedad = req.query.idE;
     //console.log("GET Sintomas", idEnfermedad);
-    res.render('GUIsintomatologia', { idEnfermedad });
+    res.render('GUI_Sintomatologia', { idEnfermedad });
 });
 
-
+//******************Buscar Sintomas*****************/
 app.get('/consultaSintoma', (req, res) => {
     Sintoma.find({})
         .exec((err, sintomas) => {
@@ -23,6 +23,8 @@ app.get('/consultaSintoma', (req, res) => {
             res.send({ sintomas: sintomas });
         });
 });
+
+//******************Guardar Sintoma*****************/
 app.post('/sintomaIngresa', (req, res) => {
     let body = req.body
     let sintoma = new Sintoma({
@@ -39,6 +41,7 @@ app.post('/sintomaIngresa', (req, res) => {
     });
 });
 
+//******************Guardar Relacion*****************/
 app.post('/ingresoRelacion', (req, res) => {
     let body = req.body
     let enfermedades = body.enfermedad;

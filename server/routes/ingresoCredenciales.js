@@ -7,9 +7,10 @@ const { verificaToken, ver_doc } = require("../middlewares/autenticacion");
 const app = express();
 
 app.get("/logeo", (req, res) => {
-    res.render("GUIiniciarsesion");
+    res.render("GUI_Iniciarsesion");
 });
 
+//*******************Validar Datos********************************/
 app.post("/logeo", (req, res) => {
     let body = req.body;
     Usuario.findOne({ correo: body.correo }, (err, usuarioDB) => {

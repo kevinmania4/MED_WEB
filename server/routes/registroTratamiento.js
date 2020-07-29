@@ -8,9 +8,10 @@ const app = express();
 app.get('/tratamiento', (req, res) => {
     let idEnfermedad = req.query.idE;
     //console.log("GET Tratamiento", idEnfermedad);
-    res.render('GUItratamiento', { idEnfermedad });
+    res.render('GUI_Tratamiento', { idEnfermedad });
 });
 
+//****************Guardar Tratamiento************************/
 app.post('/ingresaTratamiento', (req, res) => {
     let body = req.body
         //console.log(body.tratamiento);
