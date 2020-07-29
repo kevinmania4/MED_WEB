@@ -13,15 +13,15 @@
     }
 </style>
 
-<br><br><br><br><br><br>
-<center>
+<br><br><br><br>
+{{!-- <center>
     <h1>TRATAMIENTO</h1>
-</center>
-<br><br><br>
+</center> --}}
+<br><br><br><br><br>
 
-<h1 style="position: absolute; top: 250px; left:110px;">Síntomas</h1>
+<h1 style="position: absolute; top: 150px; left:110px;">Síntomas</h1>
 
-<div style="position: absolute; top: 325px; left:25px;">
+<div style="position: absolute; top: 200px; left:25px;">
     <select id="sintomas" name="transporte" size="2" style="
             width : 300px;
             height : 300px;
@@ -30,8 +30,10 @@
     </select>
 
 </div>
-<h1 style="position: absolute; top: 250px; left:400px;">Síntomas elegidos</h1>
-<div style="position: absolute; top: 325px; left:420px;">
+<div>
+<h1 style="position: absolute; top: 150px; left:400px;">Síntomas elegidos</h1>
+</div>
+<div style="position: absolute; top: 200px; left:400px;">
     <select id="seleccionados" name="transporte" size="2" style="
             width : 300px;
             height : 180px;
@@ -40,16 +42,17 @@
 
     {{!-- <button type="button" class="btn btn-primary">Salir</button> --}}
 </div>
-<form id="respuesta" style="position: absolute; top: 550px; left:550px;">
+<form id="respuesta" style="position: absolute; top: 400px; left:500px;">
     <button type="submit" class="btn btn-primary">Consultar</button>
 </form>
 <div id="cont-python" style="position: absolute; top: 600px; left:550px;">
-    <h>PYTHON</h>
-    <input id="submitbutton" type="submit" value="Test Send Data">
+    {{!-- <h>PYTHON</h>
+    <input id="submitbutton" type="submit" value="Test Send Data"> --}}
 </div>
-
-<h1 style="position: absolute; top: 250px; left:800px;">Información recomendada</h1>
-<div style="position: absolute; top: 325px; left:850px;">
+<div>
+<h1 style="position: absolute; top: 150px; left:760px;">Información recomendada</h1>
+</div>
+<div style="position: absolute; top: 200px; left:770px;">
 
     <!--<textarea name="comentarios" rows="14" cols="100"></textarea>-->
     <textarea id="recipiente" id="recipiente" style="
@@ -58,6 +61,35 @@
             overflow : auto;"></textarea>
 
 </div>
+<div class="w3-container">
+
+    <button onclick="document.getElementById('id01').style.display='block'"
+        style="position: absolute; top: 150px; left:1220px; border:none; background:none;"> <img
+            src="assets/img/ayuda.png" alt="Gandalf" /></button>
+
+    <div id="id01" class="w3-modal" style="position: absolute; top: 120px; left:0px;">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Guia del paciente.</h2>
+            </header>
+            <div class="w3-container">
+                <p>1) Elegir síntomas.</p>
+                <p>2) Podra visualizar los síntomas elegidos.</p>
+                <p>3) Consultar.</p>
+                <p>4) En información recomendada podra:</p>
+                <p> Ver la enfermedad y el tratamiento que se le dianostica</p>
+               
+            
+            </div>
+            {{!-- <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer> --}}
+        </div>
+    </div>
+</div>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -134,59 +166,59 @@
                 }
             });
         });
-/*
-        $.ajax({
-            url: 'http://127.0.0.1:5000/api/v1.0/tareas',
-            method: 'POST',
-            //contentType: 'application/json',
-
-            success: (respuesta) => {
-                console.log("AJAX", respuesta);
-                console.log("AJAX", respuesta.respondo);
-            }
-        });
-*/
+        /*
+                $.ajax({
+                    url: 'http://127.0.0.1:5000/api/v1.0/tareas',
+                    method: 'POST',
+                    //contentType: 'application/json',
+        
+                    success: (respuesta) => {
+                        console.log("AJAX", respuesta);
+                        console.log("AJAX", respuesta.respondo);
+                    }
+                });
+        */
     });
 /*
+        function runPyScript(input) {
+            var jqXHR = $.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:5000/api/v1.0/tareas",
+                //async: false,
+                //data: { mydata: input },
+                success: (respuesta) => {
+                    console.log("R__-----_>", respuesta);
+                    console.log("R__-----_>", respuesta.respondo);
+                }
+            });
+    
+            return jqXHR.responseText;
+        }
+        datatosend = 'this is my matrix';
+        result = runPyScript(datatosend);
+        console.log('Got back ' + result);
+        console.log('Got back ' + result.respondo);
+    */
+</script>
+<script type="text/javascript">
+
     function runPyScript(input) {
         var jqXHR = $.ajax({
             type: "POST",
-            url: "http://127.0.0.1:5000/api/v1.0/tareas",
-            //async: false,
-            //data: { mydata: input },
-            success: (respuesta) => {
-                console.log("R__-----_>", respuesta);
-                console.log("R__-----_>", respuesta.respondo);
-            }
+            url: "http://127.0.0.1:5000/login",
+            async: false,
+            data: { mydata: input }
         });
 
         return jqXHR.responseText;
     }
-    datatosend = 'this is my matrix';
-    result = runPyScript(datatosend);
-    console.log('Got back ' + result);
-    console.log('Got back ' + result.respondo);
-*/
+
+    $('#submitbutton').click(function () {
+        datatosend = 'this is my matrix';
+        result = runPyScript(datatosend);
+        console.log('Got back ' + result);
+    });
+
 </script>
- <script type="text/javascript"> 
-
-    function runPyScript(input){ 
-     var jqXHR = $.ajax({ 
-      type: "POST", 
-      url: "http://127.0.0.1:5000/login", 
-      async: false, 
-      data: { mydata: input } 
-     }); 
-
-     return jqXHR.responseText; 
-    } 
-
-    $('#submitbutton').click(function(){ 
-     datatosend = 'this is my matrix'; 
-     result = runPyScript(datatosend); 
-     console.log('Got back ' + result); 
-    }); 
-
-</script> 
 
 {{> footer }}

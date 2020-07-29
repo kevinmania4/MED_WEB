@@ -31,11 +31,13 @@ body,
     }
 </style>
 
+
+
 <br><br><br><br><br>
 <center>
     <h1>ADMINISTRADOR</h1>
 </center>
-<h3 style="position: absolute; top: 210px; right:300px;">Buscar:</h3>
+<h3 style="position: absolute; top: 200px; right:300px;">Buscar:</h3>
 
 <form style="position: absolute; top: 215px; right:200px;">
 
@@ -67,6 +69,32 @@ body,
         </thead>
         <tbody id="contenedor-us"> </tbody>
     </table>
+</div>
+
+<div class="w3-container">
+
+    <button onclick="document.getElementById('id01').style.display='block'"
+        style="position: absolute; top: 150px; left:1220px; border:none; background:none;"> <img
+            src="assets/img/ayuda.png" alt="Gandalf" /></button>
+
+    <div id="id01" class="w3-modal" style="position: absolute; top: 120px; left:0px;">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Guia del administrador.</h2>
+            </header>
+            <div class="w3-container">
+                <p>1) Actualizar:</p>
+                <p>Se puede bloquiar o desbloquiar a cualquier usuario registrado.</p>
+                <p>Se puede visualizar los usuarios registrados como médico y paciente.</p>
+            
+            </div>
+            {{!-- <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer> --}}
+        </div>
+    </div>
 </div>
 
 
