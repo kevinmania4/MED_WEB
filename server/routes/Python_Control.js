@@ -8,7 +8,7 @@ app.get('/python', (req, res) => {
 let cargaData = () => {
     return new Promise(function(sucess, nosuccess) {
         const { spawn } = require('child_process');
-        const pyprog = spawn("python", ["example.py"]);
+        const pyprog = spawn("python3", ["example.py"]);
         pyprog.stdout.on('data', function(data) {
             sucess(JSON.parse(data.toString()));
         });

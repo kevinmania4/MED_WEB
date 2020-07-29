@@ -121,7 +121,7 @@ vocca.sort()
 
 # Modelo de Máquinas de Vectores de Soporte
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.4, random_state=12)  #
-algoritmo = SVC()
+algoritmo = SVC(kernel='sigmoid')
 algoritmo.fit(X_train, y_train)
 Y_pred = algoritmo.predict(X_test)
 
