@@ -1,27 +1,28 @@
 {{> header }}
 {{> headMed }}
+<font face="Asap">
+    <style type="text/css">
+        body,
+        html {
 
-<style type="text/css">
-    body,
-    html {
+            height: 100%;
+            background-repeat: no-repeat;
+            background: url(assets/img/fondo3.jpg) no-repeat center center fixed;
+            background-size: 100% 100%;
+            opacity: 5;
+            filter: alpha(opacity=1);
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-        height: 100%;
-        background-repeat: no-repeat;
-        background: url(assets/img/fondo3.jpg) no-repeat center center fixed;
-        background-size: 100% 100%;
-        opacity: 5;
-        filter: alpha(opacity=1);
-    }
-</style>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
+    <body>
 
-    <div class="section-title" style="position: absolute; top: 140px; left:170px;">
-        <h1><b>Enfermedad</b> </1>
-    </div>
+        <div class="section-title" style="position: absolute; top: 140px; left:170px;">
+            <h1><b>Enfermedad</b> </1>
+        </div>
 
-    {{!-- <table class="egt" border="1" style="position: absolute; top: 200px; left:25px;">
+        {{!-- <table class="egt" border="1" style="position: absolute; top: 200px; left:25px;">
         <thead>
             <tr>
                 <th>Tabla enfermedad</th>
@@ -32,121 +33,122 @@
     </table> --}}
 
 
-    <div style="position: absolute; top: 200px; left:100px;">
-        <select id="sintomas" name="transporte" size="2" style="
+        <div style="position: absolute; top: 200px; left:100px;">
+            <select id="sintomas" name="transporte" size="2" style="
             width : 400px;
             height : 300px;
             overflow : auto;">
 
-        </select>
-    </div>
-
-
-    <form id="create-form2">
-        {{!-- <div class="col-md-6 mb-3" > --}}
-        <label for="enfermedad">
-            <h1 id="create-form" style="position: absolute; top: 140px; left:800px;"><b>Ingrese enfermedad</b></h1>
-        </label>
-
-        <input style="position: absolute; top: 200px; left:850px;" type="text" class="form-control-lg" id="create-input"
-            placeholder="" value="" required></input>
-
-        <div class="invalid-feedback">
-            Valid last name is required.
+            </select>
         </div>
-        {{!-- </div> --}}
 
-        <div class="text-center">
-            <button style="position: absolute; top: 270px; left:930px;" class="btn btn-lg btn-primary btn-lg"
-                type="submit">Enviar</button>
-        </div>
-    </form>
 
-<div class="w3-container">
+        <form id="create-form2">
+            {{!-- <div class="col-md-6 mb-3" > --}}
+            <label for="enfermedad">
+                <h1 id="create-form" style="position: absolute; top: 140px; left:800px;"><b>Ingrese enfermedad</b></h1>
+            </label>
 
-    <button onclick="document.getElementById('id01').style.display='block'"
-        style="position: absolute; top: 150px; left:1180px; border:none; background:none;"> <img
-            src="assets/img/ayuda.png" alt="Gandalf" /></button>
+            <input style="position: absolute; top: 200px; left:850px;" type="text" class="form-control-lg"
+                id="create-input" placeholder="" value="" required></input>
 
-    <div id="id01" class="w3-modal" style="position: absolute; top: 120px; left:0px;">
-        <div class="w3-modal-content">
-            <header class="w3-container w3-teal">
-                <span onclick="document.getElementById('id01').style.display='none'"
-                    class="w3-button w3-display-topright">&times;</span>
-                <h2>Guia de ingresar enfermedad:</h2>
-            </header>
-            <div class="w3-container">
-                <p>1) Ingresar enfermedad.</p>
-                <p>2) Clic en enviar.</p>
-                <p>3) Elegir una enfermedad.</p>
-                <p>4) Se eviara a la elección de síntomas.</p>
+            <div class="invalid-feedback">
+                Valid last name is required.
             </div>
-            {{!-- <footer class="w3-container w3-teal">
+            {{!-- </div> --}}
+
+            <div class="text-center">
+                <button style="position: absolute; top: 270px; left:930px;" class="btn btn-lg btn-primary btn-lg"
+                    type="submit">Enviar</button>
+            </div>
+        </form>
+
+        <div class="w3-container">
+
+            <button onclick="document.getElementById('id01').style.display='block'"
+                style="position: absolute; top: 150px; left:1180px; border:none; background:none;"> <img
+                    src="assets/img/ayuda.png" alt="Gandalf" /></button>
+
+            <div id="id01" class="w3-modal" style="position: absolute; top: 120px; left:0px;">
+                <div class="w3-modal-content">
+                    <header class="w3-container w3-teal">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-display-topright">&times;</span>
+                        <h2>Guia de ingresar enfermedad:</h2>
+                    </header>
+                    <div class="w3-container">
+                        <p>1) Ingresar enfermedad.</p>
+                        <p>2) Clic en enviar.</p>
+                        <p>3) Elegir una enfermedad.</p>
+                        <p>4) Se eviara a la elección de síntomas.</p>
+                    </div>
+                    {{!-- <footer class="w3-container w3-teal">
         <p>Modal Footer</p>
       </footer> --}}
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script>
-        console.log('Hola como estas')
-        $(function () {
-            $.ajax({
-                url: '/enfermedades',
-                contentType: 'application/json',
-                success: (response) => {
-                    let cont_sintomas = $('#sintomas');
-                    response.enfermedades.forEach((enfer) => {
-                        cont_sintomas.append('<option value="' + enfer._id + '" selected="selected" >' + enfer.descripcion + '</option>');
-                    });
-                }
-            });
-            $('#sintomas').on('click', (event) => {
-                event.preventDefault();
-                let selecionado = $("#sintomas option:selected").text();
-                let id_seleccionado = $('#sintomas').val();
-                //<a href="/sintoma?idE=' + enfer._id + '">Seleccionar</a
-                //$('#seleccionados').append('<option value="' + id_seleccionado + '" selected="selected">' + selecionado + '</option>');
-                window.location = "/sintoma?idE=" + id_seleccionado + "";
-            });
-            $('#create-form2').on('submit', function (event) {
-                event.preventDefault();
-                var crear = $('#create-input');
-
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script>
+            console.log('Hola como estas')
+            $(function () {
                 $.ajax({
-                    url: '/enfermedad',
-                    method: 'POST',
+                    url: '/enfermedades',
                     contentType: 'application/json',
-                    data: JSON.stringify({ descripcion: crear.val() }),
-                    success: function (response) {
-                        //console.log(response);
-                        crear.val('');
-                        //--
-                        $.ajax({
-                            url: '/enfermedades',
-                            contentType: 'application/json',
-                            success: (response) => {
-                                let cont_sintomas = $('#sintomas');
-                                let elemento = $('#sintomas option');
-                                $.each(elemento, (i, v) => {
-                                    let value = v.value;
-                                    //console.log("El value_->", value);
-                                    $("#sintomas option[value=" + value + "]").remove();
-                                });
-                                response.enfermedades.forEach((enfer) => {
-                                    cont_sintomas.append('<option value="' + enfer._id + '" selected="selected" >' + enfer.descripcion + '</option>');
-                                });
-                            }
+                    success: (response) => {
+                        let cont_sintomas = $('#sintomas');
+                        response.enfermedades.forEach((enfer) => {
+                            cont_sintomas.append('<option value="' + enfer._id + '" selected="selected" >' + enfer.descripcion + '</option>');
                         });
-                        //--
                     }
                 });
-            });
+                $('#sintomas').on('click', (event) => {
+                    event.preventDefault();
+                    let selecionado = $("#sintomas option:selected").text();
+                    let id_seleccionado = $('#sintomas').val();
+                    //<a href="/sintoma?idE=' + enfer._id + '">Seleccionar</a
+                    //$('#seleccionados').append('<option value="' + id_seleccionado + '" selected="selected">' + selecionado + '</option>');
+                    window.location = "/sintoma?idE=" + id_seleccionado + "";
+                });
+                $('#create-form2').on('submit', function (event) {
+                    event.preventDefault();
+                    var crear = $('#create-input');
 
-        });
-    </script>
-</body>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    $.ajax({
+                        url: '/enfermedad',
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({ descripcion: crear.val() }),
+                        success: function (response) {
+                            //console.log(response);
+                            crear.val('');
+                            //--
+                            $.ajax({
+                                url: '/enfermedades',
+                                contentType: 'application/json',
+                                success: (response) => {
+                                    let cont_sintomas = $('#sintomas');
+                                    let elemento = $('#sintomas option');
+                                    $.each(elemento, (i, v) => {
+                                        let value = v.value;
+                                        //console.log("El value_->", value);
+                                        $("#sintomas option[value=" + value + "]").remove();
+                                    });
+                                    response.enfermedades.forEach((enfer) => {
+                                        cont_sintomas.append('<option value="' + enfer._id + '" selected="selected" >' + enfer.descripcion + '</option>');
+                                    });
+                                }
+                            });
+                            //--
+                        }
+                    });
+                });
+
+            });
+        </script>
+    </body>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</font>
 {{> footer }}
