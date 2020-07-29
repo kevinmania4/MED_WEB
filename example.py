@@ -51,6 +51,13 @@ def funcionVocabulario(tweets):
                 vocabularioTweet.append(palabraTweet)
     return vocabularioTweet
 
+def funcionVocabulario2(tweets):
+    vocabularioTweet = []
+    for palabraTweet in tweets:
+        if palabraTweet not in vocabularioTweet:
+            vocabularioTweet.append(palabraTweet)
+    return vocabularioTweet
+
 
 def pesado(n):
     if n > 0:
@@ -109,6 +116,8 @@ y = enfermedades
 valorx = funcion_TF_IDF(sintomas)
 arr1 = np.array(valorx)
 x = arr1.transpose()
+vocca = funcionVocabulario2(y)
+vocca.sort()
 
 # Modelo de Máquinas de Vectores de Soporte
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.4, random_state=12)  #
@@ -196,16 +205,18 @@ pres = algoritmo.score(X_test, y_test)
 #     print(Y_pred[i]," Real: ",y_test[i])
 
 DATA = {
-    "test": X_train.shape[0],
-    "training": X_test.shape[0],
+    "test":X_test.shape[0] ,
+    "training":X_train.shape[0],
     "pSVC": pres,
+    "enfermedadades":vocca,
+    "T_erroes": int(totalErrores),
     "accuracy": ACCC,
     "precision": list(PPV),
     "recall": list(TPR),
-    "f-mesure": list(F1),
+    "f_mesure": list(F1),
     "prediccion": list(Y_pred),
     "reales": y_test
 }
 
-# print(DATA)
+#print(DATA)
 print(json.dumps(DATA))
