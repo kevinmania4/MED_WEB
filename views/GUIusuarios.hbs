@@ -44,7 +44,7 @@
 
         <form style="position: absolute; top: 215px; right:200px;">
 
-            <select id="seleccion" name="genero">
+            <select class="custom-select d-block w-100" id="seleccion" name="genero">
                 <option value="USER_MEDICO">Médico</option>
                 <option value="USER_PACIENTE">Paciente</option>
 
@@ -115,7 +115,7 @@
                         /// tbodyEl.html('');
                         response.usuarios.forEach(function (usus) {
                             //tbodyEl.append('<tr><th>' + usus._id + '</th><th>' + usus.nombre + '</th><th>' + usus.apellido + ' </th><th>' + usus.cedula + '</th><th>' + usus.correo + '</th><th>' + usus.perfil + '</th><th>' + usus.estado + '</th><th><button id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></th></tr>');
-                            tbodyEl.append('<tr style="width: 680px" ><td style="width: 250px" scope="col">' + usus._id + '</td><td style="width: 110px" scope="col">' + usus.nombre + '</td><td style="width: 110px" scope="col">' + usus.apellido + ' </td><td style="width: 110px" scope="col">' + usus.cedula + '</td><td style="width: 230px" scope="col">' + usus.correo + '</td><td style="width: 150px" scope="col">' + usus.perfil + '</td><td style="width: 110px" scope="col">' + usus.estado + '</td><td style="width: 160px" scope="col"><button id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></td></tr>');
+                            tbodyEl.append('<tr style="width: 680px" ><td style="width: 250px" scope="col">' + usus._id + '</td><td style="width: 110px" scope="col">' + usus.nombre + '</td><td style="width: 110px" scope="col">' + usus.apellido + ' </td><td style="width: 110px" scope="col">' + usus.cedula + '</td><td style="width: 230px" scope="col">' + usus.correo + '</td><td style="width: 150px" scope="col">' + usus.perfil + '</td><td style="width: 110px" scope="col">' + usus.estado + '</td><td style="width: 160px" scope="col"><button class="btn btn-lg btn-primary btn-lg" id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></td></tr>');
                             $("#" + usus._id + "").on('click', (event) => {
                                 event.preventDefault();
                                 console.log(usus._id, "####");
@@ -158,7 +158,7 @@
                             response.usuarios.forEach(function (usus) {
 
                                 //tbodyEl2.append('<tr><th>' + usus._id + '</th><th>' + usus.nombre + '</th><th>' + usus.apellido + ' </th><th>' + usus.cedula + '</th><th>' + usus.correo + '</th><th>' + usus.perfil + '</th><th>' + usus.estado + '</th><th><button id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></th></tr>');
-                                tbodyEl2.append('<tr style="width: 680px" ><td style="width: 250px" scope="col">' + usus._id + '</td><td style="width: 110px" scope="col">' + usus.nombre + '</td><td style="width: 110px" scope="col">' + usus.apellido + ' </td><td style="width: 110px" scope="col">' + usus.cedula + '</td><td style="width: 230px" scope="col">' + usus.correo + '</td><td style="width: 150px" scope="col">' + usus.perfil + '</td><td style="width: 110px" scope="col">' + usus.estado + '</td><td style="width: 160px" scope="col"><button id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></td></tr>');
+                                tbodyEl2.append('<tr style="width: 680px" ><td style="width: 250px" scope="col">' + usus._id + '</td><td style="width: 110px" scope="col">' + usus.nombre + '</td><td style="width: 110px" scope="col">' + usus.apellido + ' </td><td style="width: 110px" scope="col">' + usus.cedula + '</td><td style="width: 230px" scope="col">' + usus.correo + '</td><td style="width: 150px" scope="col">' + usus.perfil + '</td><td style="width: 110px" scope="col">' + usus.estado + '</td><td style="width: 160px" scope="col"><button class="btn btn-lg btn-primary btn-lg" id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></td></tr>');
 
                                 $("#" + usus._id + "").on('click', (event) => {
                                     event.preventDefault();
