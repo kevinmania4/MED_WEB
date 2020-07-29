@@ -14,9 +14,9 @@
     }
 
     .table-fixed tbody {
-        height: 180px;
+        height: 190px;
         overflow: auto;
-        width: 95%;
+        width: 60%;
     }
 
     .table-fixed thead,
@@ -43,13 +43,13 @@
 
 <br><br><br>
 
-<div id='tablas' class="table table-hover table-fixed" border="0"
-    style="width:50%" "position: absolute; top: 300px; left:20px;">
-    <table>
+<div >
+    <table id='tablas' class="table table-hover table-fixed"  border="0"
+    style="width:45%" "position: absolute; top: 300px; left:20px;">
         <thead>
             <tr>
-                <th style="width: 200px" scope="col">Predictorios</th>
-                <th style="width: 200px" scope="col">Reales</th>
+                <th style="width: 170px" scope="col">Predictorios</th>
+                <th style="width: 140px" scope="col">Reales</th>
             </tr>
         </thead>
         <tbody id='contenedor1'>
@@ -143,7 +143,7 @@
                 console.log(dta.prediccion.length);
                 console.log("paso");
                 for (i = 0; i < dta.reales.length; i++) {
-                    $('#contenedor1').append('<tr><td  style="width: 200px" scope="col">' + dta.reales[i] + '</td><td  style="width: 180px" scope="col">' + dta.prediccion[i] + '</td></tr>')
+                    $('#contenedor1').append('<tr><td  style="width: 160px" >' + dta.prediccion[i] + '</td><td  style="width: 170px" >' + dta.reales[i] + '</td></tr>')
                 }
                 /*
                                 dta.reales.forEach((predic) => {
