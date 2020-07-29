@@ -1,106 +1,148 @@
 {{> header }}
+<link rel="stylesheet" href="assets/css/style_table_us.css">
 {{> headSalir }}
 <center>
-    <font face="Montserrat" size=4.5>
-        <style type="text/css">
-            body,
-            html {
 
-                height: 100%;
-                background-repeat: no-repeat;
-                background: url(assets/img/fondo3.jpg) no-repeat center center fixed;
-                background-size: 100% 100%;
-                opacity: 5;
-                filter: alpha(opacity=1);
-            }
+    <style type="text/css">
+        body,
+        html {
 
-            .table-fixed tbody {
-                height: 200px;
-                overflow: auto;
-                width: 92.5%;
-            }
+            height: 100%;
+            background-repeat: no-repeat;
+            background: url(assets/img/fondo3.jpg) no-repeat center center fixed;
+            background-size: 100% 100%;
+            opacity: 5;
+            filter: alpha(opacity=1);
+        }
+    </style>
 
-            .table-fixed thead,
-            .table-fixed tbody,
-            .table-fixed td,
-            .table-fixed th {
-                display: block;
-            }
 
-            .table-fixed tbody td,
-            .table-fixed thead>tr>th {
-                float: left;
-                border-bottom-width: 0;
-            }
-        </style>
-        <br><br><br><br><br>
-        <center>
-            <h1>ADMINISTRADOR</h1>
-        </center>
-        <h3 style="position: absolute; top: 200px; right:300px;">Buscar:</h3>
-        <form style="position: absolute; top: 215px; right:200px;">
-            <select class="custom-select d-block w-100" id="seleccion" name="genero">
-                <option value="USER_MEDICO">Médico</option>
-                <option value="USER_PACIENTE">Paciente</option>
 
-            </select>
-        </form>
-        <br><br>
-        <br><br><br>
-        <div>
-            <table id="usuarios" class="table table-hover table-fixed"
-                style="width:100%" "position: absolute; top: 300px; left:20px;">
-                <thead>
-                    <tr style="width: 600px">
-                        <th style="width: 250px" scope="col">id</th>
-                        <th style="width: 110px" scope="col">Nombre</th>
-                        <th style="width: 110px" scope="col">Apellido</th>
-                        <th style="width: 110px" scope="col">Cédula</th>
-                        <th style="width: 230px" scope="col">Correo Electrónico</th>
-                        <th style="width: 150px" scope="col">Perfil</th>
-                        <th style="width: 110px" scope="col">Estado</th>
-                        <th style="width: 160px" scope="col">Actualizar</th>
-                    </tr>
-                </thead>
-                <tbody id="contenedor-us"> </tbody>
-            </table>
-        </div>
-        <div class="w3-container">
-            <button onclick="document.getElementById('id01').style.display='block'"
-                style="position: absolute; top: 150px; left:1220px; border:none; background:none;"> <img
-                    src="assets/img/ayuda.png" alt="Gandalf" /></button>
+    <br><br><br><br><br>
+    <center>
+        <h1>ADMINISTRADOR</h1>
+    </center>
+    <h3 style="position: absolute; top: 200px; right:300px;">Buscar:</h3>
 
-            <div id="id01" class="w3-modal" style="position: absolute; top: 120px; left:0px;">
-                <div class="w3-modal-content">
-                    <header class="w3-container w3-teal">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-display-topright">&times;</span>
-                        <h2>Guia del administrador.</h2>
-                    </header>
-                    <div class="w3-container">
-                        <p>1) Actualizar:</p>
-                        <p>Se puede bloquear o desbloquear a cualquier usuario registrado.</p>
-                        <p>Se puede visualizar los usuarios registrados como médico y paciente.</p>
-                    </div>
+    <form style="position: absolute; top: 215px; right:200px;">
+
+        <select class="custom-select d-block w-100" id="seleccion" name="genero">
+            <option value="USER_MEDICO">Médico</option>
+            <option value="USER_PACIENTE">Paciente</option>
+
+        </select>
+    </form>
+    <br><br>
+    <br><br><br>
+
+    <div>
+        <table id="usuarios" class="table table-hover table-fixed"
+            style="width:100%" "position: absolute; top: 300px; left:20px;">
+            <thead>
+                <tr style="width: 600px">
+                    <th style="width: 250px" scope="col">id</th>
+                    <th style="width: 110px" scope="col">Nombre</th>
+                    <th style="width: 110px" scope="col">Apellido</th>
+                    <th style="width: 110px" scope="col">Cédula</th>
+                    <th style="width: 230px" scope="col">Correo Electrónico</th>
+                    <th style="width: 150px" scope="col">Perfil</th>
+                    <th style="width: 110px" scope="col">Estado</th>
+                    <th style="width: 160px" scope="col">Actualizar</th>
+
+                </tr>
+
+            </thead>
+            <tbody id="contenedor-us"> </tbody>
+        </table>
+    </div>
+
+    <div class="w3-container">
+
+        <button onclick="document.getElementById('id01').style.display='block'"
+            style="position: absolute; top: 150px; left:1220px; border:none; background:none;"> <img
+                src="assets/img/ayuda.png" alt="Gandalf" /></button>
+
+        <div id="id01" class="w3-modal" style="position: absolute; top: 120px; left:0px;">
+            <div class="w3-modal-content">
+                <header class="w3-container w3-teal">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                        class="w3-button w3-display-topright">&times;</span>
+                    <h2>Guia del administrador.</h2>
+                </header>
+                <div class="w3-container">
+                    <p>1) Actualizar:</p>
+                    <p>Se puede bloquear o desbloquear a cualquier usuario registrado.</p>
+                    <p>Se puede visualizar los usuarios registrados como médico y paciente.</p>
+
                 </div>
+                {{!-- <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer> --}}
             </div>
         </div>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+
+        $(function () {
             //*********************Mostrar Usuarios**************************/
-            $(function () {
+            $.ajax({
+                url: '/verusuarios',
+                method: 'POST',
+                contentType: 'application/json',
+                success: function (response) {
+                    var tbodyEl = $('#contenedor-us');
+                    /// tbodyEl.html('');
+                    response.usuarios.forEach(function (usus) {
+                        //tbodyEl.append('<tr><th>' + usus._id + '</th><th>' + usus.nombre + '</th><th>' + usus.apellido + ' </th><th>' + usus.cedula + '</th><th>' + usus.correo + '</th><th>' + usus.perfil + '</th><th>' + usus.estado + '</th><th><button id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></th></tr>');
+                        tbodyEl.append('<tr style="width: 680px" ><td style="width: 250px" scope="col">' + usus._id + '</td><td style="width: 110px" scope="col">' + usus.nombre + '</td><td style="width: 110px" scope="col">' + usus.apellido + ' </td><td style="width: 110px" scope="col">' + usus.cedula + '</td><td style="width: 230px" scope="col">' + usus.correo + '</td><td style="width: 150px" scope="col">' + usus.perfil + '</td><td style="width: 110px" scope="col">' + usus.estado + '</td><td style="width: 160px" scope="col"><button  class="btn btn-lg btn-primary btn-lg" id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></td></tr>');
+                        $("#" + usus._id + "").on('click', (event) => {
+                            event.preventDefault();
+                            console.log(usus._id, "####");
+                            let estado = " ";
+                            if (usus.estado == true) {
+                                estado = false
+
+                            } else {
+                                estado = true
+                            }
+                            $.ajax({
+                                url: '/elegirus/' + usus._id + '',
+                                method: 'PUT',
+                                contentType: 'application/json',
+                                data: JSON.stringify({ estado: estado }),
+                                success: function (response) {
+                                    console.log(response);
+                                    location.reload();
+                                }
+                            });
+                        });
+
+                    });
+
+                }
+            });
+
+            $("#seleccion").on('click', (event) => {
+                event.preventDefault();
+                var elegir = $('#seleccion');
+                var tbodyEl = $('#contenedor-us');
+                tbodyEl.html(' ');
                 $.ajax({
-                    url: '/verusuarios',
+                    url: '/elegirus',
                     method: 'POST',
                     contentType: 'application/json',
+                    data: JSON.stringify({ opcion: elegir.val() }),
                     success: function (response) {
-                        var tbodyEl = $('#contenedor-us');
-                        /// tbodyEl.html('');
+                        var tbodyEl2 = $('#contenedor-us');
                         response.usuarios.forEach(function (usus) {
-                            //tbodyEl.append('<tr><th>' + usus._id + '</th><th>' + usus.nombre + '</th><th>' + usus.apellido + ' </th><th>' + usus.cedula + '</th><th>' + usus.correo + '</th><th>' + usus.perfil + '</th><th>' + usus.estado + '</th><th><button id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></th></tr>');
-                            tbodyEl.append('<tr style="width: 680px" ><td style="width: 250px" scope="col">' + usus._id + '</td><td style="width: 110px" scope="col">' + usus.nombre + '</td><td style="width: 110px" scope="col">' + usus.apellido + ' </td><td style="width: 110px" scope="col">' + usus.cedula + '</td><td style="width: 230px" scope="col">' + usus.correo + '</td><td style="width: 150px" scope="col">' + usus.perfil + '</td><td style="width: 110px" scope="col">' + usus.estado + '</td><td style="width: 160px" scope="col"><button class="btn btn-lg btn-primary btn-lg" id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></td></tr>');
+
+                            //tbodyEl2.append('<tr><th>' + usus._id + '</th><th>' + usus.nombre + '</th><th>' + usus.apellido + ' </th><th>' + usus.cedula + '</th><th>' + usus.correo + '</th><th>' + usus.perfil + '</th><th>' + usus.estado + '</th><th><button id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></th></tr>');
+                            tbodyEl2.append('<tr style="width: 680px" ><td style="width: 250px" scope="col">' + usus._id + '</td><td style="width: 110px" scope="col">' + usus.nombre + '</td><td style="width: 110px" scope="col">' + usus.apellido + ' </td><td style="width: 110px" scope="col">' + usus.cedula + '</td><td style="width: 230px" scope="col">' + usus.correo + '</td><td style="width: 150px" scope="col">' + usus.perfil + '</td><td style="width: 110px" scope="col">' + usus.estado + '</td><td style="width: 160px" scope="col"><button  class="btn btn-lg btn-primary btn-lg" id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></td></tr>');
+
                             $("#" + usus._id + "").on('click', (event) => {
                                 event.preventDefault();
                                 //console.log(usus._id, "####");
@@ -123,64 +165,14 @@
                                     }
                                 });
                             });
-
-                        });
+                        })
 
                     }
                 });
-
-                $("#seleccion").on('click', (event) => {
-                    event.preventDefault();
-                    var elegir = $('#seleccion');
-                    var tbodyEl = $('#contenedor-us');
-                    tbodyEl.html(' ');
-                    $.ajax({
-                        url: '/elegirus',
-                        method: 'POST',
-                        contentType: 'application/json',
-                        data: JSON.stringify({ opcion: elegir.val() }),
-                        success: function (response) {
-                            var tbodyEl2 = $('#contenedor-us');
-                            response.usuarios.forEach(function (usus) {
-
-                                //tbodyEl2.append('<tr><th>' + usus._id + '</th><th>' + usus.nombre + '</th><th>' + usus.apellido + ' </th><th>' + usus.cedula + '</th><th>' + usus.correo + '</th><th>' + usus.perfil + '</th><th>' + usus.estado + '</th><th><button id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></th></tr>');
-                                tbodyEl2.append('<tr style="width: 680px" ><td style="width: 250px" scope="col">' + usus._id + '</td><td style="width: 110px" scope="col">' + usus.nombre + '</td><td style="width: 110px" scope="col">' + usus.apellido + ' </td><td style="width: 110px" scope="col">' + usus.cedula + '</td><td style="width: 230px" scope="col">' + usus.correo + '</td><td style="width: 150px" scope="col">' + usus.perfil + '</td><td style="width: 110px" scope="col">' + usus.estado + '</td><td style="width: 160px" scope="col"><button class="btn btn-lg btn-primary btn-lg" id=' + usus._id + ' value=' + usus._id + '>Actualizar</button></td></tr>');
-
-                                $("#" + usus._id + "").on('click', (event) => {
-                                    event.preventDefault();
-                                    console.log(usus._id, "####");
-                                    let estado = " ";
-                                    if (usus.estado == true) {
-                                        estado = false
-
-                                    } else {
-                                        estado = true
-                                    }
-                                    $.ajax({
-                                        url: '/elegirus/' + usus._id + '',
-                                        method: 'PUT',
-                                        contentType: 'application/json',
-                                        data: JSON.stringify({ estado: estado }),
-                                        success: function (response) {
-                                            console.log(response);
-                                            location.reload();
-                                        }
-                                    });
-                                });
-                            })
-
-                        }
-                    });
-                });
-
-
-
-
-
-
             });
-        </script>
-        <br><br>
-    </font>
+        });
+    </script>
+    <br><br>
+
 </center>
 {{> footer }}
