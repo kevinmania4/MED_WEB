@@ -5,7 +5,7 @@ const Relacion = require('../models/relacion');
 const app = express();
 
 app.get('/sintoma', (req, res) => {
-    //let idEnfermedad = req.query.idE;
+    let idEnfermedad = req.query.idE;
     //console.log("GET Sintomas", idEnfermedad);
     res.render('GUI_Sintomatologia', { idEnfermedad });
 });
