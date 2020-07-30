@@ -50,7 +50,7 @@
         <thead>
             <tr>
                 <th style="width: 170px" scope="col">Predictorios</th>
-                <th style="width: 140px" scope="col">Reales</th>
+                <th style="width: 170px" scope="col">Reales</th>
             </tr>
         </thead>
         <tbody id='contenedor1'>
@@ -63,13 +63,13 @@
 
 <div id='cont-01'>
     <table id="usuarios" class="table table-hover table-fixed" border="0"
-        style="position: absolute; top: 265px; left:450px;">
+        style="position: absolute; top: 235px; left:450px;">
         <thead>
             <tr>
                 <th style="width: 180px" scope="col">Enfermedad</th>
                 <th style="width: 180px" scope="col">Precision</th>
                 <th style="width: 180px" scope="col">Recall</th>
-                <th style="width: 150px" scope="col">f_mesure</th>
+                <th style="width: 180px" scope="col">f_mesure</th>
             </tr>
         </thead>
         <tbody id='contenedor3'>
@@ -78,43 +78,8 @@
 </div>
 
 
-{{!-- 
-    <table id="usuarios" class="table table-hover table-fixed" border="0"
-        style= "position: absolute; top: 265px; left:650px;">
-        <thead>
-            <tr>
-                <th style="width: 150px" scope="col">Precision</th>
-            </tr>
-        </thead>
-        <tbody id='contenedor4'>
-        </tbody>
-    </table>
- 
-    <table id="usuarios" class="table table-hover table-fixed" border="0"
-        style= "position: absolute; top: 265px; left:850px;">
-        <thead>
-            <tr>
-                <th style="width: 150px" scope="col">Recall</th>
-            </tr>
-        </thead>
-        <tbody id='contenedor5'>
-        </tbody>
-    </table>
-
-    <table id="usuarios" class="table table-hover table-fixed" border="0"
-        style= "position: absolute; top: 265px; left:1050px;">
-        <thead>
-            <tr>
-                <th style="width: 150px" scope="col">F-Mesure</th>
-            </tr>
-        </thead>
-        <tbody id='contenedor6'>
-        </tbody>
-    </table>
- --}}
-
 <b>
-    <div id='cont_02' style="position: absolute; top: 550px; left:800px;">
+    <div id='cont_02' style="position: absolute; top: 480px; left:800px;">
     </div>
 </b>
 
@@ -139,6 +104,8 @@
                 console.log("Mesure", dta.f_mesure);
 
                 $('#info_datos').append('Instancias para el training:' + dta.training + ' instancias para el test:' + dta.test + '');
+                $('#cont_02').append('<p>Accuracy:' + dta.accuracy + '</p>');
+                $('#cont_02').append('<p>Total de errores: ' + dta.T_erroes + ' </p>');
                 //------------------------------------
                 console.log(dta.reales.length);
                 console.log(dta.prediccion.length);
